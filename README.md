@@ -15,8 +15,8 @@ During the first week, we worked on the design of the gym application. The appli
 
 During the second week, we worked on the HTML structure of the landing page for the gym application. The landing page is designed to showcase the main features of the application. The HTML structure includes:
 
--A header section featuring the gym logo and a button for users to register or log in to their accounts
--A sidebar with a navigation menu that allows users to easily navigate through the different sections of the landing page
--A features section that displays images and descriptions of the main features of the application, including activities, memberships, and a contact form for inquiries
--A footer section with links to the gym's social media profiles and contact information for further support.
+- A header section featuring the gym logo and a button for users to register or log in to their accounts
+- A sidebar with a navigation menu that allows users to easily navigate through the different sections of the landing page
+- A features section that displays images and descriptions of the main features of the application, including activities, memberships, and a contact form for inquiries
+- A footer section with links to the gym's social media profiles and contact information for further support.
 
