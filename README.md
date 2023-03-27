@@ -13,7 +13,7 @@ During the first week, we worked on the design of the gym application. The appli
 
 ## Week 02
 
-During the second week, we worked on the HTML structure of the landing page for the gym application. The landing page is designed to showcase the main features of the application and encourage potential users to sign up. The HTML structure includes:
+During the second week, we worked on the HTML structure of the landing page for the gym application. The landing page is designed to showcase the main features of the application. The HTML structure includes:
 
 -A header section featuring the gym logo and a button for users to register or log in to their accounts
 -A sidebar with a navigation menu that allows users to easily navigate through the different sections of the landing page
