@@ -2,28 +2,53 @@
     font-family: 'Roboto', sans-serif;
 }
 h1{
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 45px;
     font-weight: 700;
     line-height: 53px;
     color: rgba(227, 236, 57, 0.9);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    text-transform: uppercase;
-    margin: 0;
 }
 header{
     height: 188px;
     background-color: rgb(50, 50, 50);
-
 }
-.container-logo{
+aside{
+    float: left;
+    width: 336px;
+    background-color:rgba(227, 236, 57, 0.9) ;
+}
+nav{
+    margin-top: 150px;
+    text-align: center;
+}
+nav li{
+    margin-bottom: 20px;
+}
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:30px;
+    font-weight:800;
+    line-height:35px;
+    color: black;
+}
+nav ul {
+    padding: 0;
+    list-style: none ;
+}
+
+
+.container-logo-header{
     display:  inline-block;
     margin-left: 20px;
     text-align: center;
  }
- .container-logo img{
-     margin-top: 30px; 
+.container-logo-header img{
+    margin-top: 30px; 
  }
- .container-login-sign{
+.container-login-sign{
     float: right;
     width: 152px;
     height: 66px;
@@ -37,15 +62,20 @@ header{
 
 .container-login-sign a{
     color: black;
-    font-weight: 500;
-    font-size: 25px;
     text-decoration: none;
     text-transform: uppercase;
-    line-height: 29px;
     text-align: center;
     text-decoration: none;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
     
 }
 .container-login-sign a img{
     vertical-align: bottom;
+}
+
+.aside-contact{
+    font-size: 24px;
+    line-height: 28px;   
 }
