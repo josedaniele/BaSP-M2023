@@ -4,22 +4,31 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./CSS/reset.css">
+        <link rel="stylesheet" href="./CSS/style.css">
         <title>MegaRocket-Landing</title>
     </head>
     <body>
         <header>
-            <img src="../assets/images/radium-rocket-logo.png" alt="radium-rocket-logo">
-            <h1>
-                Megarocket s.a
-            </h1>
-                <a href="#">
-                    Log-in
-                    <img src="../assets/images/login-icon.png" alt="login-icon">
-                </a>
-                <a href="#">
-                    Sign-up
-                    <img src="../assets/images/sign-up-icon.png" alt="sign-up-icon">
-                </a>
+            <div class="container-logo">
+                <img class="logo" src="../assets/images/radium-rocket-logo.png" alt="radium-rocket-logo">
+                <h1>
+                    megarocket s.a
+                </h1>
+            </div>
+                <div class="container-login-sign">
+                    <a href="#">
+                        Log-in
+                        <img src="../assets/images/login-icon.png" alt="login-icon">
+                    </a>
+                </div>
+                <div class="container-login-sign">
+                    <a href="#">
+                        Sign-up
+                        <img src="../assets/images/sign-up-icon.png" alt="sign-up-icon">
+                    </a>
+                </div>
+            </div>
         </header>
         <aside>
             <nav>
@@ -55,16 +64,12 @@
                         </a>
                     </li>
                 </ul>
-                <ul>
-                    <li>
-                        <img src="../assets/images/location-pin.png" alt="location-icon">
-                        <a href="#" target="_blank">Av. Pellegrini  3535</a>
-                    </li>
-                    <li>
-                        <img src="../assets/images/ring-phone.png" alt="ring-phone">
-                        <a href="tel:+34678567876">+34678567876</a>
-                    </li>
-                </ul>
+                <div id="aside-contact">
+                    <img src="../assets/images/location-pin.png" alt="location-icon">
+                    <p href="#" target="_blank">Av. Pellegrini  3535</p>
+                    <img src="../assets/images/ring-phone.png" alt="ring-phone">
+                    <p href="tel:+34678567876">+34678567876</p>
+                </div>
             </nav>
         </aside>
         <main>

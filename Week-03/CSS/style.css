@@ -1,0 +1,51 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 53px;
+    color: rgba(227, 236, 57, 0.9);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
+    margin: 0;
+}
+header{
+    height: 188px;
+    background-color: rgb(50, 50, 50);
+
+}
+.container-logo{
+    display:  inline-block;
+    margin-left: 20px;
+    text-align: center;
+ }
+ .container-logo img{
+     margin-top: 30px; 
+ }
+ .container-login-sign{
+    float: right;
+    width: 152px;
+    height: 66px;
+    padding: 10px 6px;
+    margin-right: 50px;
+    margin-top: 60px;
+    border-radius: 5px;
+    border: none;
+    background-color: #FFFFFF;
+}
+
+.container-login-sign a{
+    color: black;
+    font-weight: 500;
+    font-size: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 29px;
+    text-align: center;
+    text-decoration: none;
+    
+}
+.container-login-sign a img{
+    vertical-align: bottom;
+}
