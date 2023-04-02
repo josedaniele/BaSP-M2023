@@ -34,7 +34,7 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#home-container">
+                        <a href="#container-home">
                             Home
                         </a>
                     </li>
@@ -64,7 +64,7 @@
                         </a>
                     </li>
                 </ul>
-                <div class="aside-contact">
+                <div class="contact-aside">
                     <img src="../assets/images/location-pin.png" alt="location-icon">
                     <p href="#" target="_blank">Av. Pellegrini  3535</p>
                     <img src="../assets/images/ring-phone.png" alt="ring-phone">
@@ -73,52 +73,55 @@
             </nav>
         </aside>
         <main>
-            <section id="home-container">
-                <div class="opacity">
-                    <h2>
-                        Don't sit <span class="span-h2">get fit</span>
-                    </h2>
-                    <p>
-                        Your best version is waiting for you, join Mega Rocket Gym today.
-                        In this app you can choose our best personal trainers and the best classes
-                        and have a bunch of privileges with our different memberships.
-                    </p>
-                </div>
+            <section id="container-home">
+                <h2>
+                    Don't sit <span class="span-h2">get fit</span>
+                </h2>
+                <p>
+                    Your best version is waiting for you, join Mega Rocket Gym today.
+                    In this app you can choose our best personal trainers and the best classes
+                    and have a bunch of privileges with our different memberships.
+                </p>
             </section>
-            <section id="features">
+            <section id="features-container">
                 <h2>
                     Featu<span class="span-h2">res</span>
                 </h2>
-                <article>
+                <article id="container-reservation" >
                     <h3>
                         Reservations
                     </h3>
                     <p>
-                        Choose your favorite class and ensure your place
+                        Choose your favorite class and
+                        ensure your place
                     </p>
                 </article>
-                <article>
+                <article id="container-schedule">
                     <h3>
                         Schedule
                     </h3>
                     <p>
-                        Monday to saturday 08 am till 08 pm
+                        Monday to saturday
+                        08 am till 08 pm
                     </p>
-                    </article>
-                <article>
+                </article>
+                <article id="container-memberships">
                     <h3>
                         Memberships
                     </h3>
                     <p>
-                        Pick which one is best for you
+                        Pick which one is
+                        best for you
                     </p>
                 </article>
-                <article>
+                <article id="container-suggestions">
                     <h3>
-                        Contact and suggestions
+                        Contact and
+                        suggestions
                     </h3>
                     <p>
-                        Your opinion is important to us, it helps us improve
+                        Your opinion is important to us,
+                        it helps us improve
                     </p>
                 </article>
             </section>
@@ -127,32 +130,41 @@
                     Contact<span class="span-h2">us</span>
                 </h2>
                 <form action="">
-                    <label for="name" name="name">
-                        Name
-                    </label>
-                    <input type="text" name="name" placeholder="John">
-
-                    <label for="surname" name="surname">
-                        Surname
-                    </label>
-                    <input type="text" name="surname" placeholder=" Johnson">
-                    <label for="email" name="email">
-                        E-Mail
-                    </label>
-                    <input type="email" name="email" placeholder="johnjohnson@gmail.com">
-                    <label for="contact-reason" name="contact-reason">
-                        Contact Reason
-                    </label>
-                    <select name="contact-reason">
-                        <option disabled selected>Choose one</option>
-                        <option value="membership">I want to know the memberships and costs</option>
-                        <option value="suggestion">I want to make a query or suggestion</option>
-                        <option value="claim">I want to make a claim</option>
-                        <option value="other">Other...</option>
-                    </select>
-                    <label for="query-message" name="query-message">Message</label>
-                    <textarea name="query-message" id="" cols="30" rows="10" placeholder="Write here..."></textarea>
-                    <input type="submit"></input>
+                    <div class="inputs-contact">
+                        <label for="name" name="name">
+                            Name
+                        </label>
+                        <input type="text" name="name" placeholder="John">
+                    </div>
+                    <div class="inputs-contact">
+                        <label for="surname" name="surname">
+                            Surname
+                        </label>
+                        <input type="text" name="surname" placeholder=" Johnson">
+                    </div>
+                    <div class="inputs-contact">
+                        <label for="email" name="email">
+                            E-Mail
+                        </label>
+                        <input type="email" name="email" placeholder="johnjohnson@gmail.com">
+                    </div>
+                    <div class="inputs-contact">
+                        <label for="contact-reason" name="contact-reason">
+                            Contact Reason
+                        </label>
+                        <select name="contact-reason">
+                            <option disabled selected>Choose one</option>
+                            <option value="membership">I want to know the memberships and costs</option>
+                            <option value="suggestion">I want to make a query or suggestion</option>
+                            <option value="claim">I want to make a claim</option>
+                            <option value="other">Other...</option>
+                        </select>
+                    </div>
+                    <div class="inputs-contact">
+                        <label for="query-message" name="query-message">Message</label>
+                        <textarea name="query-message" id="" cols="140" rows="10" placeholder="Write here..."></textarea>
+                        <input type="submit"></input>
+                    </div>
                 </form>
             </section>
             <section id="activities">

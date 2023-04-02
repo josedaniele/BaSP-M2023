@@ -1,8 +1,7 @@
-*{
+body{
     font-family: 'Roboto', sans-serif;
 }
 h1{
-    margin: 0;
     text-transform: uppercase;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 45px;
@@ -17,6 +16,7 @@ header{
 aside{
     float: left;
     width: 336px;
+    height: 3319.5px;
     background-color:rgba(227, 236, 57, 0.9) ;
 }
 nav{
@@ -41,9 +41,11 @@ nav ul {
 main{
     margin-left: 336px;
     background-color: rgb(83, 83, 83);
-    max-height: max-content;
 }
 h2{
+    margin: 0;
+    font-weight: 800;
+    margin-top: 60px;
     text-transform: uppercase;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-align: center;
@@ -86,29 +88,29 @@ h2{
     vertical-align: bottom;
 }
 
-.aside-contact{
+.contact-aside{
     font-size: 24px;
     line-height: 28px;   
 }
 .span-h2{
     color: #E3EC39;
     position: relative;    
-    top: 105px;
-    right: 90px;
+    top: 100px;
+    right: 55px;
 }
-#home-container{
+#container-home{
     height: 864px;
-    background-image: url(../../assets/images/landing-dont-sit-background.jpg);
-    background-size:contain;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../../assets/images/landing-dont-sit-background.jpg);
+    background-size:cover;
     background-repeat: no-repeat;
 }
-#home-container h2{
+#container-home h2{
     padding: 105px;
     margin: 0;
 }
 
-#home-container p{
-    margin-top: 92px;
+#container-home p{
+    margin-top: 20px;
     color: #FFFFFF;
     text-align: center;
     font-weight: 500;
@@ -116,7 +118,75 @@ h2{
     line-height: 70px;
     white-space: pre-line;
 }
-.opacity{
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+#features-container{
+    height: 1050px;
+    text-align: center;
+}
+#features-container article{
+    width: 455px;
+    height: 288px;
+    border-radius: 10px;
+    background-size:cover;
+    text-align: center;
+}
+#features-container article h3{
+    font-weight: 700;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    white-space: pre-line;
+    line-height: 58px;
+    color: #E3EC39;
+}
+#features-container article  p{
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    white-space: pre-line;
+    color: #FFFFFF;
+}
+#container-reservation{
+    float: left;
+    margin: 200px 46px 75px 110px;
+    background-image: linear-gradient(rgba(139, 124, 124, 0.3), rgba(139, 124, 124, 0.3)),url(../../assets/images/landing-reservations-background.png);
+}
+#container-schedule{
+    float: right;
+    margin:200px 110px 75px 0px;
+    background-image: linear-gradient(rgba(139, 124, 124, 0.3), rgba(139, 124, 124, 0.3)),url(../../assets/images/landing-schedule-background.jpg);
+}
+#container-memberships{
+    float: left;
+    margin: 0px 0px 0px 110px;
+    background-image: linear-gradient(rgba(139, 124, 124, 0.3), rgba(139, 124, 124, 0.3)),url(../../assets/images/landing-memberships-background.jpg);
+}
+#container-suggestions{
+    float: right;
+    margin: 0px 110px 0px 0px;
+    background-image: linear-gradient(rgba(139, 124, 124, 0.3), rgba(139, 124, 124, 0.3)),url(../../assets/images/landing-conttact-suggestions-background.png);
+}
+#contact form{
+    margin-top: 130px;
+    width: 1030px;
+    height: 350px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+}
+.inputs-contact{
+    display: inline-block;
+    margin-top: 35px;
+}
+.inputs-contact label{
+    display: block;
+}
+.inputs-contact input, select{
+    width: 190px;
+    height: 35px;
+}
+#contact form :first-child{
+    margin-left: 70px;
+}
+#contact form :nth-last-child(2){
+   margin-right: 70px;
+   margin-left: 0px;
 }
