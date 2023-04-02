@@ -165,13 +165,17 @@ h2{
     margin: 0px 110px 0px 0px;
     background-image: linear-gradient(rgba(139, 124, 124, 0.3), rgba(139, 124, 124, 0.3)),url(../../assets/images/landing-conttact-suggestions-background.png);
 }
+
 #contact form{
+    margin: auto;
     margin-top: 130px;
     width: 1030px;
     height: 350px;
     background-color: #FFFFFF;
     border-radius: 30px;
+    text-align: center;
 }
+
 .inputs-contact{
     display: inline-block;
     margin-top: 35px;
@@ -179,14 +183,34 @@ h2{
 .inputs-contact label{
     display: block;
 }
+.inputs-contact input, select, textarea{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #FFFFFF;
+    border: 1px solid #373867;
+    border-radius: 4px;
+    color: rgba(83, 83, 83, 1);
+    
+}
+.inputs-contact textarea{
+    width: 935px;
+    height: 100px;
+    border: none;
+}
+.inputs-contact input{
+    margin-right: 40px;
+}
 .inputs-contact input, select{
     width: 190px;
     height: 35px;
 }
-#contact form :first-child{
-    margin-left: 70px;
+#submit-contact{
+    display: block;
+    margin: 35px auto 0px;
+    width: 75px;
+    height: 35px;
+    font-weight: 800;
+    font-size: 12px;
+    background-color: #E3EC39;
+    border: none;
+    border-radius: 6px;
 }
-#contact form :nth-last-child(2){
-   margin-right: 70px;
-   margin-left: 0px;
-}
+
