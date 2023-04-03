@@ -4,25 +4,28 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Lato:wght@100;400;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./CSS/reset.css">
         <link rel="stylesheet" href="./CSS/style.css">
         <title>MegaRocket-Landing</title>
     </head>
     <body>
         <header>
-            <div class="container-logo-header">
+            <div class="logo-header-container">
                 <img class="logo" src="../assets/images/radium-rocket-logo.png" alt="radium-rocket-logo">
                 <h1>
                     megarocket s.a
                 </h1>
             </div>
-                <div class="container-login-sign">
+                <div class="login-sign-container">
                     <a href="#">
                         Log-in
                         <img src="../assets/images/login-icon.png" alt="login-icon">
                     </a>
                 </div>
-                <div class="container-login-sign">
+                <div class="login-sign-container">
                     <a href="#">
                         Sign-up
                         <img src="../assets/images/sign-up-icon.png" alt="sign-up-icon">
@@ -34,50 +37,50 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#container-home">
+                        <a href="#home-container">
                             Home
                         </a>
                     </li>
                     <li>
-                        <a href="#features">
+                        <a href="#features-container">
                             Features
                         </a>
                     </li>
                     <li>
-                        <a href="#contact">
+                        <a href="#contact-container">
                             Contact us
                         </a>
                     </li>
                     <li>
-                        <a href="#activities">
+                        <a href="#activities-container">
                             Activities
                         </a>
                     </li>
                     <li>
-                        <a href="#memberships">
+                        <a href="#memberships-container">
                             Memberships
                         </a>
                     </li>
                     <li>
-                        <a href="#ourStory">
+                        <a href="#our-story-container">
                             Our story
                         </a>
                     </li>
                 </ul>
+                <div class="contact-aside">
+                    <div>
+                        <img src="../assets/images/location-pin.png" alt="location-icon">
+                        <p href="#" target="_blank">Av. Pellegrini  3535</p>
+                    </div>
+                    <div>
+                        <img src="../assets/images/ring-phone.png" alt="ring-phone">
+                        <p href="tel:+34678567876">+34678567876</p>
+                    </div>
+                </div>
             </nav>
-            <div class="contact-aside">
-                <div>
-                <img src="../assets/images/location-pin.png" alt="location-icon">
-                <p href="#" target="_blank">Av. Pellegrini  3535</p>
-                </div>
-                <div>
-                <img src="../assets/images/ring-phone.png" alt="ring-phone">
-                <p href="tel:+34678567876">+34678567876</p>
-                </div>
-            </div>
         </aside>
         <main>
-            <section id="container-home">
+            <section id="home-container">
                 <h2>
                     Don't sit <span class="span-h2">get fit</span>
                 </h2>
@@ -91,7 +94,7 @@
                 <h2>
                     Featu<span class="span-h2">res</span>
                 </h2>
-                <article id="container-reservation" >
+                <article class="reservation-features" >
                     <h3>
                         Reservations
                     </h3>
@@ -100,7 +103,7 @@
                         ensure your place
                     </p>
                 </article>
-                <article id="container-schedule">
+                <article class="schedule-features">
                     <h3>
                         Schedule
                     </h3>
@@ -109,7 +112,7 @@
                         08 am till 08 pm
                     </p>
                 </article>
-                <article id="container-memberships">
+                <article class="memberships-features">
                     <h3>
                         Memberships
                     </h3>
@@ -118,7 +121,7 @@
                         best for you
                     </p>
                 </article>
-                <article id="container-suggestions">
+                <article class="suggestions-features">
                     <h3>
                         Contact and
                         suggestions
@@ -129,7 +132,7 @@
                     </p>
                 </article>
             </section>
-            <section id="contact">
+            <section id="contact-container">
                 <h2>
                     Contact<span class="span-h2">us</span>
                 </h2>
@@ -168,49 +171,49 @@
                         <label for="query-message" name="query-message">Message</label>
                         <textarea name="query-message" id="" cols="40" rows="10" placeholder="Write here..."></textarea>
                     </div>
-                    <input id="submit-contact" type="submit" value="Send"></input>
+                    <input class="submit-button-contact" type="submit" value="Send"></input>
                 </form>
             </section>
-            <section id="activities">
+            <section id="activities-container">
                 <h2>
                     Activi<span class="span-h2">ties</span>
                 </h2>
-                <div>    
-                    <article id="crossfit-article">
+                <div>
+                    <article class="crossfit-article">
                         <h3>
                             Crossfit
                         </h3>
                     </article>
-                    <article id="box-article">
+                    <article class="box-article">
                         <h3>
                             Box
                         </h3>
                     </article>
                 </div>
-                <div>    
-                    <article id="functional-article">
+                <div>
+                    <article class="functional-article">
                         <h3>
                             Functional
                         </h3>
                     </article>
-                    <article id="spinning-article">
+                    <article class="spinning-article">
                         <h3>
                             Spinning
                         </h3>
                     </article>
-                    <article id="fitness-article">
+                    <article class="fitness-article">
                         <h3>
                             Fitness
                         </h3>
                     </article>
                 </div>
             </section>
-            <section id="memberships">
+            <section id="memberships-container">
                 <h2>
                     Member<span class="span-h2">ships</span>
                 </h2>
                 <ul>
-                    <li id="basic-membership">
+                    <li class="basic-membership">
                         <h3>
                             Only classes 
                             memberships
@@ -224,7 +227,7 @@
                             Schedule view
                         </p>
                     </li>
-                    <li id="classic-membership">
+                    <li class="classic-membership">
                         <h3>
                             Classic 
                             membership
@@ -240,7 +243,7 @@
                             Schedule view
                         </p>
                     </li>
-                    <li id="black-membership">
+                    <li class="black-membership">
                         <h3>
                             Black 
                             membership
@@ -262,7 +265,7 @@
                     </li>
                 </ul>
             </section>
-            <section id="our-story">
+            <section id="our-story-container">
                 <h2>
                     Our <span class="span-h2">story</span>
                 </h2>

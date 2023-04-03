@@ -3,12 +3,11 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 h1{
-    text-transform: uppercase;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: rgba(227, 236, 57, 0.9);
     font-size: 45px;
     font-weight: 700;
-    line-height: 53px;
-    color: rgba(227, 236, 57, 0.9);
+    text-transform: uppercase;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 header{
     height: 188px;
@@ -16,58 +15,61 @@ header{
 }
 aside{
     position: relative;
-    text-align: center;
     float: left;
     width: 336px;
     height: 6009px;
     background-color:rgba(227, 236, 57, 0.9) ;
+    text-align: center;
 }
 nav{
+    position: sticky;
+    top:20px;
     margin-top: 150px;
+    margin-bottom: 50px;
     text-align: center;
 }
 nav li{
     margin-bottom: 20px;
-}
-nav a{
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size:30px;
-    font-weight:800;
-    line-height:35px;
-    color: black;
-}
-nav ul {
-    padding: 0;
     list-style: none ;
 }
+nav a{
+    color: black;
+    font-size:30px;
+    font-weight:800;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height:35px;
+    }
 main{
     margin-left: 336px;
     background-color: rgb(83, 83, 83);
 }
 h2{
-    margin-bottom: 150px ;
-    font-weight: 800;
     margin-top: 60px;
+    margin-bottom: 150px ;
+    color: #FFFFFF;
+    font-size: 100px;
+    font-weight: 790;
     text-transform: uppercase;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-align: center;
-    font-size: 100px;
-    color: #FFFFFF;
 }
 footer{
-    background-color: rgba(50, 50, 50, 1);
     height: 150px;
+    background-color: rgba(50, 50, 50, 1);
 }
 footer a,
 footer img,
 footer p{
     display: inline-block;
-    margin: 0px 20px;
+    margin: 10px 20px 0px;
     color: #FFFFFF;
     font-size: 18px;
     text-transform: uppercase;
-    margin-top: 10px;
+    vertical-align: middle;
+}
+footer a:first-child{
+    margin-left: 100px;
 }
 footer a{
     text-decoration: underline;
@@ -83,27 +85,26 @@ footer p span{
     font-weight: 400;
 }
 /*Header*/
-.container-logo-header{
-    display:  inline-block;
+.logo-header-container{
+    display: inline-block;
     margin-left: 20px;
     text-align: center;
  }
-.container-logo-header img{
+.logo-header-container img{
     margin-top: 30px; 
  }
-.container-login-sign{
+.login-sign-container{
     float: right;
-    width: 152px;
+    width: 164px;
     height: 66px;
-    padding: 10px 6px;
-    margin-right: 50px;
     margin-top: 60px;
+    margin-right: 50px;
+    padding: 10px 6px;
     border-radius: 5px;
-    border: none;
     background-color: #FFFFFF;
 }
 
-.container-login-sign a{
+.login-sign-container a{
     color: black;
     text-decoration: none;
     text-transform: uppercase;
@@ -111,20 +112,14 @@ footer p span{
     text-decoration: none;
     font-weight: 500;
     font-size: 25px;
-    line-height: 29px;
-    
 }
-.container-login-sign a img{
+.login-sign-container img{
     vertical-align: bottom;
 }
 /*NavBar*/
 .contact-aside{
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    font-weight: 900;
     font-size: 24px;
+    font-weight: 800;
 }
 .contact-aside div{
     margin: 50px 0px;
@@ -135,23 +130,23 @@ footer p span{
 }
 /*Home*/
 .span-h2{
-    color: #E3EC39;
-    position: relative;    
+    position: relative;
     top: 100px;
     right: 55px;
+    color: #E3EC39;
 }
-#container-home{
+#home-container{
     height: 864px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../../assets/images/landing-dont-sit-background.jpg);
     background-size:cover;
     background-repeat: no-repeat;
 }
-#container-home h2{
-    padding: 105px;
+#home-container h2{
     margin: 0;
+    padding: 105px;
 }
 
-#container-home p{
+#home-container p{
     margin-top: 20px;
     color: #FFFFFF;
     text-align: center;
@@ -168,62 +163,57 @@ footer p span{
 #features-container article{
     width: 455px;
     height: 288px;
-    border-radius: 10px;
     background-size:cover;
+    border-radius: 10px;
     text-align: center;
 }
-#features-container article h3{
+#features-container h3{
+    color: #E3EC39;
     font-weight: 700;
     font-size: 50px;
     text-transform: uppercase;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     white-space: pre-line;
-    line-height: 58px;
-    color: #E3EC39;
 }
-#features-container article  p{
-    font-weight: 600;
-    font-size: 30px;
-    text-align: center;
-    white-space: pre-line;
+#features-container p{
     color: #FFFFFF;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    white-space: pre-line;
 }
-#container-reservation{
+.reservation-features{
     float: left;
     margin: 0px 46px 75px 110px;
     background-image: linear-gradient(rgba(139, 124, 124, 0.3), rgba(139, 124, 124, 0.3)),url(../../assets/images/landing-reservations-background.png);
 }
-#container-schedule{
+.schedule-features{
     float: right;
     margin:0px 110px 75px 0px;
     background-image: linear-gradient(rgba(139, 124, 124, 0.3), rgba(139, 124, 124, 0.3)),url(../../assets/images/landing-schedule-background.jpg);
 }
-#container-memberships{
+.memberships-features{
     float: left;
     margin-left: 110px;
     background-image: linear-gradient(rgba(139, 124, 124, 0.3), rgba(139, 124, 124, 0.3)),url(../../assets/images/landing-memberships-background.jpg);
 }
-#container-suggestions{
+.suggestions-features{
     float: right;
     margin-right: 110px;
     background-image: linear-gradient(rgba(139, 124, 124, 0.3), rgba(139, 124, 124, 0.3)),url(../../assets/images/landing-conttact-suggestions-background.png);
 }
 /*Contact*/
-#contact form{
-    margin: auto;
+#contact-container form{
     width: 1030px;
     height: 350px;
+    margin: auto;
     background-color: #FFFFFF;
     border-radius: 30px;
     text-align: center;
 }
-
 .inputs-contact{
     display: inline-block;
     margin-top: 35px;
-}
-.inputs-contact label{
-    display: block;
 }
 .inputs-contact input, 
 .inputs-contact select,
@@ -232,149 +222,155 @@ footer p span{
     border: 1px solid #373867;
     border-radius: 4px;
     color: rgba(83, 83, 83, 1);
+    font-size: 14px;
     
+}
+.inputs-contact input,
+.inputs-contact select{
+    width: 190px;
+    height: 35px;
+}
+.inputs-contact label{
+    display: block;
+    margin-bottom: 5px;
+    text-align: start;
+}
+.inputs-contact input{
+    margin-right: 40px;
 }
 .inputs-contact textarea{
     width: 935px;
     height: 100px;
     border: none;
+    color: rgba(83, 83, 83, 1);
 }
-.inputs-contact input{
-    margin-right: 40px;
-}
-.inputs-contact input, select{
-    width: 190px;
-    height: 35px;
-}
-#submit-contact{
+.submit-button-contact{
     display: block;
-    margin: 35px auto 0px;
     width: 75px;
     height: 35px;
-    font-weight: 800;
-    font-size: 12px;
+    margin: 35px auto 0px;
     background-color: #E3EC39;
     border: none;
     border-radius: 6px;
+    font-size: 12px;
+    font-weight: 800;
 }
 /*Activities*/
-#activities{
+#activities-container{
     text-align: center;
 }
-#activities h2{
+#activities-container h2{
     margin-bottom: 100px;
 }
-#activities article{
-    margin: 25px;
+#activities-container article{
+    display: inline-block;
     width: 305px;
     height: 185px;
+    margin: 25px;
+    background-size: cover;
     border-radius: 10px;
     text-align: center;
-    display: inline-block;
-    background-size: cover;
 }
-#activities article h3{
+#activities-container h3{
     display: inline-block;
-    padding: 5px;
     margin-top: 75px;
-    font-weight: 700;
-    font-size: 39px;
-    line-height: 46px;
-    color: #FFFFFF;
-    text-align: center;
-    text-shadow: 0px 3.9456px 3.9456px rgba(0, 0, 0, 0.25);
+    padding: 5px;
     background-color: hsla(0, 0%, 7%, 0.568);
     border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 39px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 0px 3.9456px 3.9456px rgba(0, 0, 0, 0.25);
 }
-#crossfit-article{
+.crossfit-article{
     background-image: linear-gradient(rgba(139, 124, 124, 0.3), rgba(139, 124, 124, 0.3)),url(../../assets/images/landing-crossfit-background.jpg);  
 }
-#box-article{
+.box-article{
     background-image: linear-gradient(rgba(139, 124, 124, 0.3), rgba(139, 124, 124, 0.3)),url(../../assets/images/landing-box-background.png);  
 }
-#functional-article{
+.functional-article{
     background-image: linear-gradient(rgba(139, 124, 124, 0.3), rgba(139, 124, 124, 0.3)),url(../../assets/images/landing-functional-background.jpg);  
 }
-#spinning-article{
+.spinning-article{
     background-image: linear-gradient(rgba(139, 124, 124, 0.3), rgba(139, 124, 124, 0.3)),url(../../assets/images/landing-spinning-background.png);  
 }
-#fitness-article{
+.fitness-article{
     background-image: linear-gradient(rgba(139, 124, 124, 0.3), rgba(139, 124, 124, 0.3)),url(../../assets/images/landing-fitness-background.jpg);  
 }
 /*memberships*/
-#memberships{
+#memberships-container{
     text-align: center;
 }
-#memberships ul{
-    display: inline-block;
-}
-#memberships ul li{
-    width: 480px;
-    height: 575px;
-    border-radius: 10px;
-    text-align: center;
-    white-space: pre-line;  
-    font-weight: 700;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-#memberships li p:last-child{
-    font-size: 20px;
-    position: absolute;
-    bottom: 50px;
-    right: 0;
-    left: 0;
-}
-#memberships h3{
-    color: rgba(227, 236, 57, 1);
+#memberships-container h3{
+    color: rgb(227, 236, 57);
     text-transform: uppercase;
     font-size: 40px;
     line-height: 46px;
 }
-#memberships p{
+#memberships-container ul{
+    display: inline-block;
+}
+#memberships-container li{
+    position: relative;
+    width: 480px;
+    height: 575px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 700;
+    white-space: pre-line;
+}
+#memberships-container li p:last-child{
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    left: 0;
+    font-size: 20px;
+}
+#memberships-container p{
     margin-top: 20px;
     color: #FFFFFF;
     font-size: 24px;
     text-transform: uppercase;
 }
-#basic-membership{
+.basic-membership{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../../assets/images/landing-only-classes-membership-background.png);
 }
-#classic-membership{
+.classic-membership{
     margin: 70px 0px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../../assets/images/landing-classic-membership-background.png);
 }
-#black-membership{
+.black-membership{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../../assets/images/landing-black-membership-background.jpg);
 }
 /*Our story*/
-#our-story{
+#our-story-container{
     margin-top: 100px;
 }
-#our-story h2,
-#our-story div{
+#our-story-container h2,
+#our-story-container div{
     display: inline-block;
     vertical-align: middle;
 }
-#our-story h2{
-    margin-left: 90px;
-    font-size: 60px;
+#our-story-container h2{
     position: relative;
+    margin-left: 90px;
     margin-bottom: 250px;
+    font-size: 60px;
 }
-#our-story div{
+#our-story-container div{
     width: 665px;
-    height: 215px;
+    height: 230px;
     margin-bottom: 110px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(224, 224, 224, 0.9);
     border-radius: 18px;
-    font-size: 22px;
     color: rgba(64, 64, 64, 1);
+    font-size: 22px;
     font-weight: 500;
     text-align: center;
     white-space: pre-line;
-
 }
 
 
