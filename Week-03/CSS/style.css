@@ -1,3 +1,4 @@
+/*Selectores*/
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -43,7 +44,7 @@ main{
     background-color: rgb(83, 83, 83);
 }
 h2{
-    margin: 0;
+    margin-bottom: 150px ;
     font-weight: 800;
     margin-top: 60px;
     text-transform: uppercase;
@@ -52,7 +53,7 @@ h2{
     font-size: 100px;
     color: #FFFFFF;
 }
-
+/*Header*/
 .container-logo-header{
     display:  inline-block;
     margin-left: 20px;
@@ -87,11 +88,12 @@ h2{
 .container-login-sign a img{
     vertical-align: bottom;
 }
-
+/*NavBar*/
 .contact-aside{
     font-size: 24px;
     line-height: 28px;   
 }
+/*Home*/
 .span-h2{
     color: #E3EC39;
     position: relative;    
@@ -118,6 +120,7 @@ h2{
     line-height: 70px;
     white-space: pre-line;
 }
+/*Features*/
 #features-container{
     height: 1050px;
     text-align: center;
@@ -147,28 +150,27 @@ h2{
 }
 #container-reservation{
     float: left;
-    margin: 200px 46px 75px 110px;
+    margin: 0px 46px 75px 110px;
     background-image: linear-gradient(rgba(139, 124, 124, 0.3), rgba(139, 124, 124, 0.3)),url(../../assets/images/landing-reservations-background.png);
 }
 #container-schedule{
     float: right;
-    margin:200px 110px 75px 0px;
+    margin:0px 110px 75px 0px;
     background-image: linear-gradient(rgba(139, 124, 124, 0.3), rgba(139, 124, 124, 0.3)),url(../../assets/images/landing-schedule-background.jpg);
 }
 #container-memberships{
     float: left;
-    margin: 0px 0px 0px 110px;
+    margin-left: 110px;
     background-image: linear-gradient(rgba(139, 124, 124, 0.3), rgba(139, 124, 124, 0.3)),url(../../assets/images/landing-memberships-background.jpg);
 }
 #container-suggestions{
     float: right;
-    margin: 0px 110px 0px 0px;
+    margin-right: 110px;
     background-image: linear-gradient(rgba(139, 124, 124, 0.3), rgba(139, 124, 124, 0.3)),url(../../assets/images/landing-conttact-suggestions-background.png);
 }
-
+/*Contact*/
 #contact form{
     margin: auto;
-    margin-top: 130px;
     width: 1030px;
     height: 350px;
     background-color: #FFFFFF;
@@ -213,4 +215,53 @@ h2{
     border: none;
     border-radius: 6px;
 }
+/*Activities*/
+#activities{
+    text-align: center;
+}
+#activities h2{
+    margin-bottom: 100px;
+}
+#activities article{
+    margin: 25px;
+    width: 305px;
+    height: 185px;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+}
+#activities article h3{
+    display: inline-block;
+    padding: 5px;
+    margin-top: 75px;
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 46px;
+    color: #FFFFFF;
+    text-align: center;
+    text-shadow: 0px 3.9456px 3.9456px rgba(0, 0, 0, 0.25);
+    background-color: hsla(0, 0%, 7%, 0.568);
+    border-radius: 10px;
+}
+#crossfit-article{
+    background-image: linear-gradient(rgba(139, 124, 124, 0.3), rgba(139, 124, 124, 0.3)),url(../../assets/images/landing-crossfit-background.jpg);
+    background-size: cover;  
+}
+#box-article{
+    background-image: linear-gradient(rgba(139, 124, 124, 0.3), rgba(139, 124, 124, 0.3)),url(../../assets/images/landing-box-background.png);
+    background-size: cover;  
+}
+#functional-article{
+    background-image: linear-gradient(rgba(139, 124, 124, 0.3), rgba(139, 124, 124, 0.3)),url(../../assets/images/landing-functional-background.jpg);
+    background-size: cover;  
+}
+#spinning-article{
+    background-image: linear-gradient(rgba(139, 124, 124, 0.3), rgba(139, 124, 124, 0.3)),url(../../assets/images/landing-spinning-background.png);
+    background-size: cover;  
+}
+#fitness-article{
+    background-image: linear-gradient(rgba(139, 124, 124, 0.3), rgba(139, 124, 124, 0.3)),url(../../assets/images/landing-fitness-background.jpg);
+    background-size: cover;  
+}
+
 
