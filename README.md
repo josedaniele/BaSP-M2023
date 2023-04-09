@@ -24,3 +24,11 @@ During the second week, we worked on the HTML structure of the landing page for 
 - A features section that displays images and descriptions of the main features of the application, including activities, memberships, and a contact form for inquiries
 - A footer section with links to the gym's social media profiles and contact information for further support.
 
+## Week 03
+During this week, the following tasks were completed:
+
+- Made corrections on the HTML file to improve its structure and readability.
+- Started working on the CSS for the landing page. Pure CSS was used without any tools such as flex or grid.
+- Implemented a non-fixed navigation menu in the sidebar to allow users to access it at all times.
+
+These tasks were completed successfully
