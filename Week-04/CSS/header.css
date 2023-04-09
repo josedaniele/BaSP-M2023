@@ -1,0 +1,61 @@
+body{
+        font-family: 'Roboto', sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #535353;
+    height: 18%;
+    padding: 0px 30px;
+}
+h1{
+    display: none;
+}
+aside{
+    background-color: #000000e8;
+    text-align: center;
+    padding: 55px 20px;
+}
+aside a,
+aside p{
+    font-size: 35px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffff;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    height: 650px;
+}
+.burguer-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E3EC39;
+    width: 50px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+.burguer-menu img{
+    width: 50px;
+    height: 40px;
+}
+.login-sign-header{
+    display: none;
+}
+.login-sign-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-aside{
+    display: none;
+}
