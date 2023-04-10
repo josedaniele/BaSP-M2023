@@ -1,5 +1,5 @@
 body{
-        font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 header{
@@ -15,9 +15,10 @@ h1{
     display: none;
 }
 aside{
+    display: none;
     background-color: #000000e8;
     text-align: center;
-    padding: 55px 20px;
+    padding: 55px 10%;
 }
 aside a,
 aside p{
@@ -31,7 +32,6 @@ nav ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
     height: 650px;
 }
 .burguer-menu{

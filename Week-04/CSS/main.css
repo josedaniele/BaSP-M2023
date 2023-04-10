@@ -1,0 +1,78 @@
+main{
+    background-color: #979797;
+    text-align: center;
+}
+main p{
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffff;
+    white-space: pre-line;
+}
+h2{
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 800;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #ffff;
+}
+#home-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    padding: 1em 1em 9em 1em;
+    background-image: url(../../assets/images/mobile-dont-sit.png);
+    background-size:cover;
+    height: 80vh;
+}
+.span-h2{
+    color: #E3EC39;
+    margin-left:40% ;
+    margin-top: 25px;
+    width: 100%;
+}
+#features-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 300vh;
+}
+#features-container article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-size: cover ;
+    background-position: center;
+    width: 90%;
+    height: 50vh;
+    border-radius: 30px;
+}
+#features-container h3{
+    color: #E3EC39;
+    font-weight: 900;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    white-space: pre-line;
+}
+#features-container p{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    white-space: pre-line;
+}
+.reservation-features{
+    background-image: linear-gradient(rgba(139, 124, 124, 0.5), rgba(139, 124, 124, 0.5)),url(../../assets/images/landing-reservations-background.png);
+}
+.schedule-features{
+    background-image: linear-gradient(rgba(139, 124, 124, 0.5), rgba(139, 124, 124, 0.5)),url(../../assets/images/landing-schedule-background.jpg);
+}
+.memberships-features{
+    background-image: linear-gradient(rgba(139, 124, 124, 0.5), rgba(139, 124, 124, 0.5)),url(../../assets/images/landing-memberships-background.jpg);
+}
+.suggestions-features{
+    background-image: linear-gradient(rgba(139, 124, 124, 0.5), rgba(139, 124, 124, 0.5)),url(../../assets/images/landing-conttact-suggestions-background.png);
+}
