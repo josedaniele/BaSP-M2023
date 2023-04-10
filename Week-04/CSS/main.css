@@ -76,3 +76,95 @@ h2{
 .suggestions-features{
     background-image: linear-gradient(rgba(139, 124, 124, 0.5), rgba(139, 124, 124, 0.5)),url(../../assets/images/landing-conttact-suggestions-background.png);
 }
+#contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+#contact-container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    width: 90%;
+    height: 80vh;
+    padding: 30px 0;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+}
+.inputs-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inputs-contact input,
+.inputs-contact select{
+    height: 30px;
+    border: 1px solid #373867;
+}
+.inputs-contact input, 
+.inputs-contact select,
+.inputs-contact textarea{
+    width: 80%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #FFFFFF;
+    border-radius: 4px;
+    color: rgba(83, 83, 83, 1);
+    font-size: 14px;
+    
+}
+.inputs-contact textarea{
+    border: none;
+}
+.submit-button-contact{
+    width: 75px;
+    height: 35px;
+    margin: 0 auto;
+    background-color: #E3EC39;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+#activities-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+#activities-container article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    width: 305px;
+    height: 185px;
+    border-radius: 10px;
+    text-align: center;
+}
+#activities-container h3{
+    background-color: hsla(0, 0%, 7%, 0.568);
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 39px;
+    font-weight: 700;
+    text-shadow: 0px 3.9456px 3.9456px rgba(0, 0, 0, 0.25);
+}
+.crossfit-article{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../../assets/images/landing-crossfit-background.jpg);  
+}
+.box-article{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../../assets/images/landing-box-background.png);  
+}
+.functional-article{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../../assets/images/landing-functional-background.jpg);  
+}
+.spinning-article{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../../assets/images/landing-spinning-background.png);  
+}
+.fitness-article{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../../assets/images/landing-fitness-background.jpg);  
+}
