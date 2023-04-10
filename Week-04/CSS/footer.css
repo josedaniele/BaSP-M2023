@@ -1,0 +1,32 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 30px 0;
+    background-color: #C4C4C4;
+}
+footer a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+}
+footer a img{
+    margin: auto;
+    width: 52px;
+}
+footer p{
+    color: #666666;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    white-space: pre-line;
+}
+footer p span{
+    text-transform: capitalize;
+    font-weight: 400;
+}

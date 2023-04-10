@@ -11,6 +11,7 @@ main p{
 h2{
     display: flex;
     flex-wrap: wrap;
+    padding: 30px;
     font-weight: 800;
     font-size: 60px;
     text-transform: uppercase;
@@ -80,7 +81,7 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+
 }
 #contact-container form{
     display: flex;
@@ -140,8 +141,9 @@ h2{
     justify-content: center;
     align-items: center;
     background-size: cover;
-    width: 305px;
-    height: 185px;
+    background-position: center;
+    width: 90%;
+    height: 40vh;
     border-radius: 10px;
     text-align: center;
 }
@@ -167,4 +169,65 @@ h2{
 }
 .fitness-article{
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../../assets/images/landing-fitness-background.jpg);  
+}
+#memberships-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#memberships-container ul{
+    width: 90%;
+}
+#memberships-container li{
+    height: 80vh;
+    margin: 70px 0;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    white-space: pre-line;
+}
+#memberships-container h3{
+    color: rgb(227, 236, 57);
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 700;
+}
+#memberships-container p{
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.basic-membership{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../../assets/images/landing-only-classes-membership-background.png);
+}
+.classic-membership{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../../assets/images/landing-classic-membership-background.png);
+}
+.black-membership{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../../assets/images/landing-black-membership-background.jpg);
+}
+
+#our-story-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 0px 200px;
+}
+#our-story-container div{
+    height: 25vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(224, 224, 224, 0.9);
+    border-radius: 18px;
+    width: 90%;
+    white-space: pre-line;
+}
+#our-story-container p{
+    color: #535353;
+    font-size: 14px;
+    font-weight: 500;
 }
