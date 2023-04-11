@@ -14,26 +14,6 @@ header{
 h1{
     display: none;
 }
-aside{
-    display: none;
-    background-color: #000000e8;
-    text-align: center;
-    padding: 55px 10%;
-}
-aside a,
-aside p{
-    font-size: 35px;
-    font-weight: 800;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #ffff;
-}
-nav ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 650px;
-}
 .burguer-menu{
     display: flex;
     justify-content: center;
@@ -48,7 +28,7 @@ nav ul {
     width: 50px;
     height: 40px;
 }
-.login-sign-header{
+.login-sign-header a{
     display: none;
 }
 .login-sign-nav{
@@ -59,7 +39,47 @@ nav ul {
 .contact-aside{
     display: none;
 }
-@media (min-width:834px) {
-    
-    
+@media (min-width:1512px) {
+    h1{
+        display: block;
+        color: rgba(227, 236, 57, 0.9);
+        font-size: 45px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    header{
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .logo-header-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .burguer-menu{
+        display: none;
+    }
+    .login-sign-header{
+        display: flex;
+        justify-content: space-around;
+        gap:60px;
+    }
+    .login-sign-header a{
+        display: inline;
+        width: 164px;
+        height: 66px;
+        padding: 10px 6px;
+        border-radius: 5px;
+        background-color: #FFFFFF;
+    }
+    .login-sign-header a{
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 500;
+        font-size: 25px;
+    }
 }
