@@ -30,7 +30,7 @@ footer p span{
     text-transform: capitalize;
     font-weight: 400;
 }
-@media (min-width:834px){
+@media (min-width: 601px) and (max-width: 1024px){
     footer{
         flex-direction: row;
         flex-wrap: wrap;
@@ -38,5 +38,20 @@ footer p span{
     }
     footer p{
         flex-basis: 100%;
+    }
+}
+@media (min-width: 1025px){
+    footer{
+        flex-direction: row;
+        justify-content: space-around;
+        background-color:  #323232;
+    }
+    footer a{
+        flex-direction: row;
+        align-items: center;
+        color: #fff;
+    }
+    footer p{
+        color: #fff;
     }
 }

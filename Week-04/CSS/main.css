@@ -2,7 +2,7 @@ main{
     background-color: rgb(83, 83, 83);
     text-align: center;
 }
-main p{
+p{
     font-weight: 500;
     font-size: 20px;
     color: #ffff;
@@ -16,11 +16,14 @@ aside{
 }
 aside a,
 aside p{
-    font-size: 35px;
+    font-size: 2rem;
     font-weight: 800;
     text-transform: uppercase;
     text-decoration: none;
     color: #ffff;
+}
+nav{
+    margin-top: 100px;
 }
 nav ul {
     display: flex;
@@ -35,7 +38,13 @@ h2{
     font-weight: 800;
     font-size: 60px;
     text-transform: uppercase;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: #ffff;
+}
+.contact-aside{
+    display: flex;
+    flex-direction: column;
+
 }
 #home-container{
     display: flex;
@@ -49,13 +58,13 @@ h2{
 }
 .span-h2{
     color: #E3EC39;
-    margin-left:40% ;
-    margin-top: 25px;
+    margin-left:35% ;
+    margin-top: 30px;
     width: 100%;
 }
 #features-container{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-around;
     gap: 50px;
     align-items: center;
@@ -145,14 +154,16 @@ h2{
     border-radius: 6px;
     font-size: 12px;
     font-weight: 800;
+    color: black;
 }
 
-#activities-container{
+.line-activities{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     gap: 50px;
+    margin: 50px 0px;
 }
 #activities-container article{
     display: flex;
@@ -227,7 +238,7 @@ h2{
 .black-membership{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../../assets/images/landing-black-membership-background.jpg);
 }
-.only-desktop{
+.display-only-desktop{
     display: none;
 }
 #our-story-container{
@@ -240,7 +251,7 @@ h2{
     padding: 50px 0px 200px;
 }
 #our-story-container div{
-    height: 20vh;
+    height: 25vh;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(224, 224, 224, 0.9);
     border-radius: 18px;
     width: 90%;
@@ -252,7 +263,7 @@ h2{
     font-weight: 500;
 }
 
-@media (min-width:834px) {
+@media (min-width: 601px) and (max-width: 1024px) {
     h2{
         font-size: 100px;
     }
@@ -269,7 +280,7 @@ h2{
         height: 450px;
     }
     #features-container h3{
-        font-size: 80px;
+        font-size: 3.5rem;
     }
     #features-container p{
         font-size: 45px;
@@ -301,13 +312,16 @@ h2{
         background-image: linear-gradient(rgba(139, 124, 124, 0.4), rgba(139, 124, 124, 0.4)),url(../../assets/images/landing-black-membership-background.jpg);
     }
     #our-story-container div{
-        height: 30vh;
+        height: 40vh;
     }
     #our-story-container p{
         font-size: 24px;
     }
 }
-@media (min-width:1512px){
+@media (min-width: 1025px){
+    h2{
+        font-size: 100px;
+    }
     main{
         display: flex;
     }
@@ -317,10 +331,101 @@ h2{
         width: 5%;
         background-color: #E3EC39;
     }
-    nav a{
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    h2{
+        flex-basis: 100%;
+        justify-content: center;
+    }
+    nav a,
+    nav p{
         color: black;
     }
     .login-sign-nav{
         display: none;
     }
+    #home-container{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../../assets/images/landing-dont-sit-background.jpg);
+        height: 100vh;
+    }
+    #home-container h2{
+        flex-basis: content;
+    }
+    #home-container p{
+        font-size: 30px;
+        white-space: normal;
+    }
+    #features-container{
+        justify-content: center;
+    }
+    #features-container article{
+        width: 40%;
+        height: 35vh;
+    }
+    #features-container h3{
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+    #features-container p{
+        font-size: 30px;
+        white-space: normal;
+    }
+    #contact-container form{
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 40vh;
+    }
+    .inputs-contact label{
+        padding: 10px 0;
+        text-align: left;
+    }
+    .inputs-contact:not(:last-child){
+        width: 25%;
+    }
+    .inputs-contact:last-child{
+        width: 100%;
+    }
+
+    .line-activities{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    #activities-container article{
+        width: 30%;
+        height: 25vh;
+    }
+    #memberships-container ul{
+        width: 40%;
+    }
+    #memberships-container li{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 70vh;
+    }
+
+    #our-story-container{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #our-story-container h2{
+        flex-basis:content ;
+        font-size: 60px;
+    }
+    #our-story-container div{
+        width: 50%;
+        height: 35vh;
+    }
+    #our-story-container p{
+        font-size: 24px;
+    }
+    .display-only-desktop{
+        display: block;
+    }
+    
 }
