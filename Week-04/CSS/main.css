@@ -1,18 +1,13 @@
 main{
-    background-color: rgb(83, 83, 83);
+    background-color: #535353;
     text-align: center;
 }
-p{
-    font-weight: 500;
-    font-size: 20px;
-    color: #ffff;
-    white-space: pre-line;
-}
+
 aside{
     display: none;
+    padding: 55px 10%;
     background-color: #000000e8;
     text-align: center;
-    padding: 55px 10%;
 }
 aside a,
 aside p{
@@ -31,79 +26,56 @@ nav ul {
     justify-content: space-between;
     height: 650px;
 }
-h2{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 30px 0;
-    font-weight: 800;
-    font-size: 60px;
-    text-transform: uppercase;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    color: #ffff;
-}
 .contact-aside{
     display: flex;
     flex-direction: column;
-
 }
 #home-container{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items:stretch;
-    padding: 1em 1em 9em 1em;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/mobile-dont-sit.png);
-    background-size:cover;
     height: 80vh;
-}
-.span-h2{
-    color: #E3EC39;
-    margin-left:35% ;
-    margin-top: 30px;
-    width: 100%;
+    padding: 1em 1em 9em 1em;
+    background-image:linear-gradient(#00000080, #00000080), url(../../assets/images/mobile-dont-sit.png);
+    background-size:cover;
 }
 #features-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 50px;
     align-items: center;
+    gap: 50px;
 }
 #features-container article{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-size: cover ;
-    background-position: center;
     width: 85%;
     height: 50vh;
+    background-size: cover ;
+    background-position: center;
     border-radius: 30px;
 }
 #features-container h3{
-    color: #E3EC39;
     font-weight: 900;
-    font-size: 40px;
-    text-transform: uppercase;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #E3EC39;
 }
 #features-container p{
-    color: #FFFFFF;
     text-align: center;
-    font-size: 20px;
     font-weight: 600;
     white-space: pre-line;
 }
 .reservation-features{
-    background-image: linear-gradient(rgba(139, 124, 124, 0.5), rgba(139, 124, 124, 0.5)),url(../../assets/images/landing-reservations-background.png);
+    background-image: linear-gradient(#8b7c7c80, #8b7c7c80),url(../../assets/images/landing-reservations-background.png);
 }
 .schedule-features{
-    background-image: linear-gradient(rgba(139, 124, 124, 0.5), rgba(139, 124, 124, 0.5)),url(../../assets/images/landing-schedule-background.jpg);
+    background-image: linear-gradient(#8b7c7c80, #8b7c7c80),url(../../assets/images/landing-schedule-background.jpg);
 }
 .memberships-features{
-    background-image: linear-gradient(rgba(139, 124, 124, 0.5), rgba(139, 124, 124, 0.5)),url(../../assets/images/landing-memberships-background.jpg);
+    background-image: linear-gradient(#8b7c7c80, #8b7c7c80),url(../../assets/images/landing-memberships-background.jpg);
 }
 .suggestions-features{
-    background-image: linear-gradient(rgba(139, 124, 124, 0.5), rgba(139, 124, 124, 0.5)),url(../../assets/images/landing-conttact-suggestions-background.png);
+    background-image: linear-gradient(#8b7c7c80, #8b7c7c80),url(../../assets/images/landing-conttact-suggestions-background.png);
 }
 #contact-container{
     display: flex;
@@ -136,10 +108,10 @@ h2{
 .inputs-contact select,
 .inputs-contact textarea{
     width: 80%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #FFFFFF;
+    background: linear-gradient(0deg, #00000033, #00000033), #FFFFFF;
     border-radius: 4px;
-    color: rgba(83, 83, 83, 1);
-    font-size: 14px;
+    font-size: 1rem;
+    color: #535353fc;
     
 }
 .inputs-contact textarea{
@@ -152,9 +124,9 @@ h2{
     background-color: #E3EC39;
     border: none;
     border-radius: 6px;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 800;
-    color: black;
+    color: #000000;
 }
 
 .line-activities{
@@ -169,10 +141,10 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-size: cover;
-    background-position: center;
     width: 90%;
     height: 40vh;
+    background-size: cover;
+    background-position: center;
     border-radius: 10px;
     text-align: center;
 }
@@ -180,24 +152,21 @@ h2{
     background-color: hsla(0, 0%, 7%, 0.568);
     border-radius: 10px;
     color: #FFFFFF;
-    font-size: 39px;
-    font-weight: 700;
-    text-shadow: 0px 3.9456px 3.9456px rgba(0, 0, 0, 0.25);
 }
 .crossfit-article{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../../assets/images/landing-crossfit-background.jpg);  
+    background-image: linear-gradient(#0000004d, #0000004d),url(../../assets/images/landing-crossfit-background.jpg);  
 }
 .box-article{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../../assets/images/landing-box-background.png);  
+    background-image: linear-gradient(#0000004d, #0000004d),url(../../assets/images/landing-box-background.png);  
 }
 .functional-article{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../../assets/images/landing-functional-background.jpg);  
+    background-image: linear-gradient(#0000004d, #0000004d),url(../../assets/images/landing-functional-background.jpg);  
 }
 .spinning-article{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../../assets/images/landing-spinning-background.png);  
+    background-image: linear-gradient(#0000004d, #0000004d),url(../../assets/images/landing-spinning-background.png);  
 }
 .fitness-article{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../../assets/images/landing-fitness-background.jpg);  
+    background-image: linear-gradient(#0000004d, #0000004d),url(../../assets/images/landing-fitness-background.jpg);  
 }
 #memberships-container{
     display: flex;
@@ -216,27 +185,19 @@ h2{
     border-radius: 10px;
     white-space: pre-line;
 }
-#memberships-container h3{
-    color: rgb(227, 236, 57);
-    text-transform: uppercase;
-    font-size: 40px;
-    line-height: 46px;
-    font-weight: 700;
-}
 #memberships-container p{
-    color: #FFFFFF;
-    font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
+    color: #FFFFFF;
 }
 .basic-membership{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../../assets/images/landing-only-classes-membership-background.png);
+    background-image: linear-gradient(#000000b3, #000000b3),url(../../assets/images/landing-only-classes-membership-background.png);
 }
 .classic-membership{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../../assets/images/landing-classic-membership-background.png);
+    background-image: linear-gradient(#000000b3, #000000b3),url(../../assets/images/landing-classic-membership-background.png);
 }
 .black-membership{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../../assets/images/landing-black-membership-background.jpg);
+    background-image: linear-gradient(#000000b3, #000000b3),url(../../assets/images/landing-black-membership-background.jpg);
 }
 .display-only-desktop{
     display: none;
@@ -251,24 +212,28 @@ h2{
     padding: 50px 0px 200px;
 }
 #our-story-container div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 25vh;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(224, 224, 224, 0.9);
-    border-radius: 18px;
     width: 90%;
+    background: linear-gradient(0deg, #00000033, #00000033), #e0e0e0e6;
+    border-radius: 18px;
     white-space: pre-line;
 }
 #our-story-container p{
-    color: #404040;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 500;
+    color: #404040;
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
     h2{
-        font-size: 100px;
+        font-size: 6.25rem;
     }
     main p{
-        font-size: 30px;
+        font-size: 1.9rem;
     }
     #home-container{
         height: 200vh;
@@ -283,7 +248,7 @@ h2{
         font-size: 3.5rem;
     }
     #features-container p{
-        font-size: 45px;
+        font-size: 2.8rem;
     }
 
     #contact-container form{
@@ -297,30 +262,30 @@ h2{
         height: 65vh;
     }
     #activities-container h3{
-        font-size: 95px;
+        font-size: 5rem;
     }
     #memberships-container li{
         height: 60vh;
     }
     .basic-membership{
-        background-image: linear-gradient(rgba(139, 124, 124, 0.4), rgba(139, 124, 124, 0.4)),url(../../assets/images/landing-only-classes-membership-background.png);
+        background-image: linear-gradient(#8b7c7c66, #8b7c7c66),url(../../assets/images/landing-only-classes-membership-background.png);
     }
     .classic-membership{
-        background-image: linear-gradient(rgba(139, 124, 124, 0.4), rgba(139, 124, 124, 0.4)),url(../../assets/images/landing-classic-membership-background.png);
+        background-image: linear-gradient(#8b7c7c66, #8b7c7c66),url(../../assets/images/landing-classic-membership-background.png);
     }
     .black-membership{
-        background-image: linear-gradient(rgba(139, 124, 124, 0.4), rgba(139, 124, 124, 0.4)),url(../../assets/images/landing-black-membership-background.jpg);
+        background-image: linear-gradient(#8b7c7c66, #8b7c7c66),url(../../assets/images/landing-black-membership-background.jpg);
     }
     #our-story-container div{
         height: 40vh;
     }
     #our-story-container p{
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 }
 @media (min-width: 1025px){
     h2{
-        font-size: 100px;
+        font-size: 6.25rem;
     }
     main{
         display: flex;
@@ -342,20 +307,20 @@ h2{
     }
     nav a,
     nav p{
-        color: black;
+        color: #000000;
     }
     .login-sign-nav{
         display: none;
     }
     #home-container{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../../assets/images/landing-dont-sit-background.jpg);
         height: 100vh;
+        background-image: linear-gradient(#00000080, #00000080),url(../../assets/images/landing-dont-sit-background.jpg);
     }
     #home-container h2{
         flex-basis: content;
     }
     #home-container p{
-        font-size: 30px;
+        font-size: 1.9rem;
         white-space: normal;
     }
     #features-container{
@@ -365,18 +330,14 @@ h2{
         width: 40%;
         height: 35vh;
     }
-    #features-container h3{
-        font-weight: 700;
-        font-size: 2.5rem;
-    }
     #features-container p{
-        font-size: 30px;
+        font-size: 1.9rem;
         white-space: normal;
     }
     #contact-container form{
         flex-direction: row;
         flex-wrap: wrap;
-        height: 40vh;
+        height: 60vh;
     }
     .inputs-contact label{
         padding: 10px 0;
@@ -415,14 +376,14 @@ h2{
     }
     #our-story-container h2{
         flex-basis:content ;
-        font-size: 60px;
+        font-size: 3.75rem;
     }
     #our-story-container div{
-        width: 50%;
-        height: 35vh;
+        width: 55%;
+        height: 50vh;
     }
     #our-story-container p{
-        font-size: 24px;
+        font-size: 1.5rem;
     }
     .display-only-desktop{
         display: block;

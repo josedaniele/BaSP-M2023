@@ -7,9 +7,9 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #535353;
     height: 18%;
     padding: 0px 30px;
+    background-color: #535353;
 }
 h1{
     display: none;
@@ -18,9 +18,9 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #E3EC39;
     width: 50px;
     height: 40px;
+    background-color: #E3EC39;
     border-radius: 5px;
     border: none;
 }
@@ -39,11 +39,11 @@ h1{
 @media (min-width: 1025px){
     h1{
         display: block;
-        color: rgba(227, 236, 57, 0.9);
-        font-size: 45px;
+        font-size: 2.8rem;
         font-weight: 700;
         text-transform: uppercase;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        text-shadow: 0px 4px 4px #00000040;
+        color: #E3EC39E6;
     }
     header{
         justify-content: space-between;
@@ -69,15 +69,15 @@ h1{
         width: 164px;
         height: 66px;
         padding: 10px 6px;
-        border-radius: 5px;
         background-color: #FFFFFF;
+        border-radius: 5px;
     }
     .login-sign-header a{
-        color: black;
+        font-weight: 500;
+        font-size: 1.55rem;
         text-decoration: none;
         text-transform: uppercase;
         text-align: center;
-        font-weight: 500;
-        font-size: 25px;
+        color: black;
     }
 }
