@@ -30,3 +30,13 @@ footer p span{
     text-transform: capitalize;
     font-weight: 400;
 }
+@media (min-width:834px){
+    footer{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    footer p{
+        flex-basis: 100%;
+    }
+}
