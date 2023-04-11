@@ -32,3 +32,13 @@ During this week, the following tasks were completed:
 - Implemented a non-fixed navigation menu in the sidebar to allow users to access it at all times.
 
 These tasks were completed successfully
+
+## Week 04
+During the fourth week, the responsive design was applied to the page.
+The objective was developed as follows:
+
+- The designed versions are mobile with a minimum screen width of 390px up to 600px, then tablet up to 1024px, and then the desktop version.
+- Flexbox and media queries were used to achieve the objective.
+- The fixed function of the navbar was removed.
+-HTML tag corrections were made.
+
