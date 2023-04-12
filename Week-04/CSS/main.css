@@ -66,16 +66,16 @@ nav ul {
     white-space: pre-line;
 }
 .reservation-features{
-    background-image: linear-gradient(#8b7c7c80, #8b7c7c80),url(../../assets/images/landing-reservations-background.png);
+    background-image: linear-gradient(#00000080, #00000080),url(../../assets/images/landing-reservations-background.png);
 }
 .schedule-features{
-    background-image: linear-gradient(#8b7c7c80, #8b7c7c80),url(../../assets/images/landing-schedule-background.jpg);
+    background-image: linear-gradient(#00000080, #00000080),url(../../assets/images/landing-schedule-background.jpg);
 }
 .memberships-features{
-    background-image: linear-gradient(#8b7c7c80, #8b7c7c80),url(../../assets/images/landing-memberships-background.jpg);
+    background-image: linear-gradient(#00000080, #00000080),url(../../assets/images/landing-memberships-background.jpg);
 }
 .suggestions-features{
-    background-image: linear-gradient(#8b7c7c80, #8b7c7c80),url(../../assets/images/landing-conttact-suggestions-background.png);
+    background-image: linear-gradient(#00000080, #00000080),url(../../assets/images/landing-conttact-suggestions-background.png);
 }
 #contact-container{
     display: flex;
@@ -136,6 +136,15 @@ nav ul {
     align-items: center;
     gap: 50px;
     margin: 50px 0px;
+}
+#activities-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+#activities-container h2{
+    align-self: center;
 }
 #activities-container article{
     display: flex;
