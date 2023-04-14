@@ -40,5 +40,8 @@ The objective was developed as follows:
 - The designed versions are mobile with a minimum screen width of 390px up to 600px, then tablet up to 1024px, and then the desktop version.
 - Flexbox and media queries were used to achieve the objective.
 - The fixed function of the navbar was removed.
--HTML tag corrections were made.
+- HTML tag corrections were made.
+***
+## Check out our project.
+https://josedaniele.github.io/BaSP-M2023/Week-04/index.html
 
