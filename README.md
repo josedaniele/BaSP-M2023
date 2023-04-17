@@ -43,7 +43,7 @@ The objective was developed as follows:
 - Flexbox and media queries were used to achieve the objective.
 - The fixed function of the navbar was removed.
 - HTML tag corrections were made.
-# Check out our project in this week.
+### Check out our project in this week.
 https://josedaniele.github.io/BaSP-M2023/Week-04/index.html
 
 ## Week 05 - JavaScript Exercises and CSS Corrections
@@ -59,7 +59,8 @@ Through these exercises, we were able to gain a better understanding of how Java
 ### CSS Corrections
 
 In the CSS corrections, we simply removed unnecessary white spaces from the file in order to optimize the code and improve its readability
-
+### Check out the excersices of JS in this week.
+https://josedaniele.github.io/BaSP-M2023/Week-05/index.html
 
 
 
