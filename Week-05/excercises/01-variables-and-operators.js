@@ -36,8 +36,8 @@ console.log("1)c)");
 
 var string3= "Happy";
 var string4= "Hacking";
-var HappyHackingLength= string3.length+ string4.length;
+var HappyHackingLength= (string3+string4).length;
 
-console.log(HappyHackingLength);
+console.log("The large of the string is ",HappyHackingLength,"characters");
 
 

@@ -34,9 +34,9 @@ variable (utilizar substring).
 
 console.log("2)c)");
 
-textShort= textComplete.substring(textComplete.length-3);
+var     threeLastCharacters= textComplete.substring(textComplete.length-3);
 
-console.log(textShort);
+console.log(threeLastCharacters);
 
 /*
 Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo
@@ -76,7 +76,7 @@ substring, toUpperCase, toLowerCase y el operador +).
 
 console.log("2)f)");
 
-var longString = "programming facebookPage";
+var longString = "pROGRAMMING fACEBOOKPAGE";
 //save the position of the space
 spaceIndex= longString.indexOf(" ");
 //change the first letter of the words to uppercase

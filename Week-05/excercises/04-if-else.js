@@ -52,5 +52,6 @@ switch (true) {
         break;
 
     default:
+        alert("The age cant be negative");
         break;
 }

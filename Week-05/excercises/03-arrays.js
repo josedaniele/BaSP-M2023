@@ -8,7 +8,7 @@ por consola los meses 5 y 11 (utilizar console.log).
 */
 console.log("3)a)");
 
-let months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", 
+var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", 
 "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
 
 console.log(months[4],months[10]);
@@ -16,7 +16,7 @@ console.log(months[4],months[10]);
 /*Ordenar el array de meses alfabéticamente y mostrarlo por consola (utilizar sort).*/
 console.log("3)b)");
 
-orderAlphabetically= months.slice().sort();
+var orderAlphabetically= months.slice().sort();
 
 console.log(orderAlphabetically);
 
@@ -45,7 +45,7 @@ Invertir el orden del array (utilizar reverse).
 */
 console.log("3)e)");
 
-backwardsMonths= months.slice().reverse();
+var backwardsMonths= months.slice().reverse();
 
 console.log(backwardsMonths);
 
@@ -65,7 +65,7 @@ Crear una copia del array de meses que contenga desde Mayo hasta Noviembre
 */
 console.log("3)g)");
 
-mayToNovember= months.slice(4,11);
+var mayToNovember= months.slice(4,11);
 
 console.log(mayToNovember);
 
