@@ -44,7 +44,7 @@ footer p span{
     footer{
         flex-direction: row;
         justify-content: space-around;
-        background-color:  #323232;
+        background-color: #323232;
     }
     footer a{
         flex-direction: row;
