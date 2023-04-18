@@ -18,7 +18,7 @@ if (randomNumber >= 0.5) {
 
 /*
 Crear una variable “Age” que contenga un número entero entre 0 y 100 y muestre 
-los siguientes mensajes de alerta:
+los siguientes mensajes de alerta
 i. “Bebe” si la edad es menor a 2 años;
 ii. “Niño” si la edad es entre 2 y 12 años;
 iii. “Adolescente” entre 13 y 19 años;
@@ -30,31 +30,36 @@ vii. “Anciano” si es mayor a 75 años.
 
 console.log("4)b)");
 
-var age = 32;
+var age = 30;
 
-switch (true) {
-    case age<2:
-        alert("Bebe");
-        break;
-    case age >= 2 && age <= 12:
-        alert("Niño");
-        break;
-    case age >= 13 && age <= 19:
-        alert("Adolecente");
-        break;
-    case age >= 20 && age <= 30:
-        alert("Joven");
-        break;
-    case age >= 31 && age <= 60:
-        alert("Adulto");
-        break;
-    case age >= 61 && age <= 75:
-        alert("Adulto Mayor");
-        break;
-    case age > 75:
-        alert("Anciano");
-        break;
-    default:
-        alert("The age cant be negative");
-        break;
-}
+if ( age >= 0 && age < 2){
+
+    alert("Bebe");
+
+}else if(age >= 2 && age <= 12){
+    
+    alert("Niño");
+
+}else if(age >= 13 && age <= 19){
+    
+    alert("Adolecente");
+
+}else if(age >= 20 && age <= 30){
+
+    alert("Joven");
+
+}else if(age >= 31 && age <= 60){
+    
+    alert("Adulto");
+
+}else if(age >= 61 && age <= 75){
+
+    alert("Adulto Mayor");
+
+}else if(age > 75){
+    
+    alert("Anciano");
+
+}else{
+    alert("La edad no puede ser negativa");
+}        
