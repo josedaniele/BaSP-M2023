@@ -22,6 +22,16 @@ p{
     white-space: pre-line;
     color: #ffff;
 }
+.log-in-main,
+.sign-up-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../../assets/images/background-log-in-sign-up.jpg);
+    background-size: cover;
+
+}
 .span-h2{
     width: 100%;
     margin-left:35% ;
