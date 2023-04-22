@@ -38,3 +38,11 @@ p{
     margin-top: 30px;
     color: #E3EC39;
 }
+
+.error-message{
+    color: #E64848;
+    padding: 5px;
+    border: 3px solid #E64848;
+    border-radius: 5px;
+    font-size: 14px;
+}
