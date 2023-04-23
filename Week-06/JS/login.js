@@ -12,29 +12,30 @@ var emailRegex = /^[^@]+@[^@]+.[a-zA-Z]{2,}$/;
 
 function emailValidation(){
     if (email.value ==="") {
-        email.insertAdjacentHTML('afterend', '<div id="email-error" class="error-message">Email required</div>');
-        return false
+        return 1;
        
     }else if (!emailRegex.test(email.value)) {
-        email.insertAdjacentHTML('afterend', '<div id="email-error" class="error-message">Enter a valid e-mail address(for example juanalberto@gmail.com)</div>');
-        return false
+        return 2;
+
     }else{
-        return true
+        return true;
+
     }
 }
 
 function passwordValidation(){
     if (password.value === "") {
-        password.insertAdjacentHTML('afterend', '<div id="password-error" class="error-message">Password required</div>');
-        return false;
+        return 1;
+
     }else if (password.value.length < 8) {
-        password.insertAdjacentHTML('afterend', '<div id="password-error" class="error-message">Password must be at least 8 characters</div>');
-        return false
+        return 2;
+
     }else if (validateNumbersAndLetters(password.value) == false){
-        password.insertAdjacentHTML('afterend', '<div id="password-error" class="error-message">Password must contain letters and numbers</div>');
-        return false
+        return 3;
+
     }else{
-        return true
+        return true;
+
     }
 }
 function validateNumbersAndLetters(passwordTest){
@@ -55,6 +56,36 @@ function validateNumbersAndLetters(passwordTest){
     }
 }
 
+function blurEmail(){
+    if (emailValidation() === 1) {
+
+        email.insertAdjacentHTML('afterend', '<div id="email-error" class="error-message">Email required</div>');
+
+    }else if (emailValidation() === 2) {
+
+        email.insertAdjacentHTML('afterend', '<div id="email-error" class="error-message">Enter a valid e-mail address(for example juanalberto@gmail.com)</div>');
+   
+    } 
+        
+
+}
+
+function blurPassword(){
+    if (passwordValidation() === 1) {
+
+        password.insertAdjacentHTML('afterend', '<div id="password-error" class="error-message">Password required</div>');
+
+    }else if (passwordValidation() === 2) {
+
+        password.insertAdjacentHTML('afterend', '<div id="password-error" class="error-message">Password must be at least 8 characters</div>');
+        
+    }else if (passwordValidation() === 3) {
+
+        password.insertAdjacentHTML('afterend', '<div id="password-error" class="error-message">Password must contain letters and numbers</div>');
+        
+    }
+
+}
 
 function focusInputEmail(){
     if (document.querySelector('#email-error')) {
@@ -62,25 +93,23 @@ function focusInputEmail(){
     }
     
 }
+
 function focusInputPassword(){
     if (document.querySelector('#password-error')) {
         document.querySelector('#password-error').remove();
     }
 }
 
-
 function onClickLogIn(){
-    if (passwordValidation() && emailValidation() == true) {
-        alert('Email: '+email.value+"\nPassword: "+password.value);
+    if (emailValidation() && passwordValidation() == true) {
+        alert('Email: '+ email.value + "\nPassword: " + password.value);
     }else{
         alert("Email or password error");
     }
-    focusInputEmail();
-    focusInputPassword();
 }
 
-email.addEventListener("blur" ,emailValidation);
+email.addEventListener("blur" ,blurEmail);
 email.addEventListener("focus",focusInputEmail );
-password.addEventListener("blur" ,passwordValidation);
+password.addEventListener("blur" ,blurPassword);
 password.addEventListener("focus",focusInputPassword);
 buttonLogin.addEventListener("click", onClickLogIn);
