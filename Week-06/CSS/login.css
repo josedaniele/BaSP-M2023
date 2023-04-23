@@ -1,41 +1,6 @@
 .log-in-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; 
     width: 70%;
     height: 50vh;
-    padding: 60px 0;
-    background-color: #E3EC39E5;
-    border-radius: 25px;
-    font-weight: 500;
-}
-
-.log-in-form h2{
-    color:black;
-    font-weight: 500;
-    font-size: 20px;
-}
-
-.log-in-form label{
-    text-align: left;
-    font-size: 14px;
-    font-weight: 700;
-    color: #373867;
-}
-.log-in-form input{
-    width: 46%;
-    height: 30px;
-    border-radius: 4px;
-    border: 1px solid #373867;
-}
-.accept-button{
-    width: 105px;
-    height: 38px;
-    background-color: #373867;
-    border-radius: 10px;
-    color: #E3EC39E5;
 }
 
 @media (min-width:1025px){

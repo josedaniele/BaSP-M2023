@@ -1,0 +1,37 @@
+.sign-up-form{
+    width :90%;
+    height: 900px;
+}
+.sign-up-form div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+
+@media (min-width:601px){
+    .sign-up-form{
+        flex-direction: row;
+        justify-content:initial;
+    }
+    .sign-up-form h2{
+        flex-basis: 100%;
+        justify-content: center;
+    }
+
+    .sign-up-form div{
+        width: 50%;
+    }
+
+    .sign-up-form div input{
+        width: 80%;
+    }
+    .sign-up-form div:last-child{
+        flex-basis: 100%;
+        justify-content: center;
+    }
+    .sign-up-form .accept-button{
+        width: 40%;
+    }
+}
