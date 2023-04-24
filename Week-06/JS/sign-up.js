@@ -11,7 +11,7 @@ var email = document.querySelector("#email");
 var password = document.querySelector("#password");
 var repeatPassword = document.querySelector("#repeat-password");
 
-var buttonLogin = document.querySelector("#sign-up-button");
+var buttonSignUp = document.querySelector("#sign-up-button");
 var emailRegex = /^[^@]+@[^@]+.[a-zA-Z]{2,}$/;
 
 //fucntions validation
@@ -85,7 +85,8 @@ function validateAdress() {
   } else if (streetAndNumber.length !== 2) {
     return 3;
   } else if (
-    onlyLetters(streetAndNumber[0]) == false ||isNaN(Number(streetAndNumber[1]))){
+    onlyLetters(streetAndNumber[0]) == false ||isNaN(Number(streetAndNumber[1]))
+  ) {
     return 4;
   } else {
     return true;
@@ -126,9 +127,9 @@ function validateEmail() {
 function validatePassword() {
   if (password.value === "") {
     return 1;
-  } else if (password.value.length < 8) {
-    return 2;
-  } else if (validateNumbersAndLetters(password.value) == false) {
+} else if (password.value.length < 8) {
+      return 2;
+    } else if (validateNumbersAndLetters(password.value) == false) {
     return 3;
   } else {
     return true;
@@ -138,7 +139,7 @@ function validatePassword() {
 function validatePasswordRepeat() {
   if (repeatPassword.value === "") {
     return 1;
-  } else if (password.value !== repeatPassword.value) {
+  } else if (password.value != repeatPassword.value) {
     return 2;
   } else {
     return true;
@@ -182,17 +183,17 @@ function blurFunction(evt) {
       if (errorName === 1) {
         name1.insertAdjacentHTML(
           "afterend",
-          '<div id="name-error" class="error-message">Name required</div>'
+          '<span id="name-error" class="error-message">Name required</span>'
         );
       } else if (errorName === 2) {
         name1.insertAdjacentHTML(
           "afterend",
-          '<div id="name-error" class="error-message">The name can only contain letters</div>'
+          '<span id="name-error" class="error-message">The name can only contain letters</span>'
         );
       } else if (errorName === 3) {
         name1.insertAdjacentHTML(
           "afterend",
-          '<div id="name-error" class="error-message">The name must have a minimum of 3 letters</div>'
+          '<span id="name-error" class="error-message">The name must have a minimum of 3 letters</span>'
         );
       }
       break;
@@ -202,17 +203,17 @@ function blurFunction(evt) {
       if (errorLastName === 1) {
         lastName.insertAdjacentHTML(
           "afterend",
-          '<div id="lastName-error" class="error-message">Lastname required</div>'
+          '<span id="lastName-error" class="error-message">Lastname required</span>'
         );
       } else if (errorLastName === 2) {
         lastName.insertAdjacentHTML(
           "afterend",
-          '<div id="lastName-error" class="error-message">The lastname can only contain letters</div>'
+          '<span id="lastName-error" class="error-message">The lastname can only contain letters</span>'
         );
       } else if (errorLastName === 3) {
         lastName.insertAdjacentHTML(
           "afterend",
-          '<div id="lastName-error" class="error-message">The lastname must have a minimum of 3 letters</div>'
+          '<span id="lastName-error" class="error-message">The lastname must have a minimum of 3 letters</span>'
         );
       }
 
@@ -223,17 +224,17 @@ function blurFunction(evt) {
       if (errorDni === 1) {
         dni.insertAdjacentHTML(
           "afterend",
-          '<div id="dni-error" class="error-message">DNI required</div>'
+          '<span id="dni-error" class="error-message">DNI required</span>'
         );
       } else if (errorDni === 2) {
         dni.insertAdjacentHTML(
           "afterend",
-          '<div id="dni-error" class="error-message">The DNI can only contain numbers</div>'
+          '<span id="dni-error" class="error-message">The DNI can only contain numbers</span>'
         );
       } else if (errorDni === 3) {
         dni.insertAdjacentHTML(
           "afterend",
-          '<div id="dni-error" class="error-message">The DNI must be composed of 7 digits.</div>'
+          '<span id="dni-error" class="error-message">The DNI must be composed of 7 digits.</span>'
         );
       }
 
@@ -244,7 +245,7 @@ function blurFunction(evt) {
       if (errorBirthdate === 1) {
         birthdate.insertAdjacentHTML(
           "afterend",
-          '<div id="birthdate-error" class="error-message">Birthdate required</div>'
+          '<span id="birthdate-error" class="error-message">Birthdate required</span>'
         );
       }
 
@@ -255,17 +256,17 @@ function blurFunction(evt) {
       if (errorPhone === 1) {
         phoneNumber.insertAdjacentHTML(
           "afterend",
-          '<div id="phone-error" class="error-message">Phone required</div>'
+          '<span id="phone-error" class="error-message">Phone required</span>'
         );
       } else if (errorPhone === 2) {
         phoneNumber.insertAdjacentHTML(
           "afterend",
-          '<div id="phone-error" class="error-message">The phone can only contain numbers</div>'
+          '<span id="phone-error" class="error-message">The phone can only contain numbers</span>'
         );
       } else if (errorPhone === 3) {
         phoneNumber.insertAdjacentHTML(
           "afterend",
-          '<div id="phone-error" class="error-message">The phone must be composed of 10 digits.</div>'
+          '<span id="phone-error" class="error-message">The phone must be composed of 10 digits.</span>'
         );
       }
 
@@ -276,17 +277,17 @@ function blurFunction(evt) {
       if (errorAdress === 1) {
         adress.insertAdjacentHTML(
           "afterend",
-          '<div id="adress-error" class="error-message">Adress required</div>'
+          '<span id="adress-error" class="error-message">Adress required</span>'
         );
       } else if (errorAdress === 2) {
         adress.insertAdjacentHTML(
           "afterend",
-          '<div id="adress-error" class="error-message">The adress must have a minimum of 5 charcaters with letters and numbers</div>'
+          '<span id="adress-error" class="error-message">The adress must have a minimum of 5 charcaters with letters and numbers</span>'
         );
       } else if (errorAdress === 3 || errorAdress == 4) {
         adress.insertAdjacentHTML(
           "afterend",
-          '<div id="adress-error" class="error-message">The adress must start with letters and then the numbers separated by a space</div>'
+          '<span id="adress-error" class="error-message">The adress must start with letters and then the numbers separated by a space</span>'
         );
       }
 
@@ -297,12 +298,12 @@ function blurFunction(evt) {
       if (errorCity === 1) {
         city.insertAdjacentHTML(
           "afterend",
-          '<div id="city-error" class="error-message">City required</div>'
+          '<span id="city-error" class="error-message">City required</span>'
         );
       } else if (errorCity === 2) {
         city.insertAdjacentHTML(
           "afterend",
-          '<div id="city-error" class="error-message">The city must have a minimum of 5  alphanumerics charcaters</div>'
+          '<span id="city-error" class="error-message">The city must have a minimum of 5  alphanumerics charcaters</span>'
         );
       }
 
@@ -313,17 +314,17 @@ function blurFunction(evt) {
       if (errorZipCode === 1) {
         zipCode.insertAdjacentHTML(
           "afterend",
-          '<div id="zip-code-error" class="error-message">Zip code required</div>'
+          '<span id="zip-code-error" class="error-message">Zip code required</span>'
         );
       } else if (errorZipCode === 2) {
         zipCode.insertAdjacentHTML(
           "afterend",
-          '<div id="zip-code-error" class="error-message">The Zip code can only contain numbers</div>'
+          '<span id="zip-code-error" class="error-message">The Zip code can only contain numbers</span>'
         );
       } else if (errorZipCode === 3) {
         zipCode.insertAdjacentHTML(
           "afterend",
-          '<div id="zip-code-error" class="error-message">The Zip code must have between 4 and 5 digits</div>'
+          '<span id="zip-code-error" class="error-message">The Zip code must have between 4 and 5 digits</span>'
         );
       }
 
@@ -334,12 +335,12 @@ function blurFunction(evt) {
       if (errorEmail === 1) {
         email.insertAdjacentHTML(
           "afterend",
-          '<div id="email-error" class="error-message">Email required</div>'
+          '<span id="email-error" class="error-message">Email required</span>'
         );
       } else if (errorEmail === 2) {
         email.insertAdjacentHTML(
           "afterend",
-          '<div id="email-error" class="error-message">Enter a valid e-mail address(for example juanalberto@gmail.com)</div>'
+          '<span id="email-error" class="error-message">Enter a valid e-mail address(for example juanalberto@gmail.com)</span>'
         );
       }
 
@@ -350,17 +351,17 @@ function blurFunction(evt) {
       if (errorPassword === 1) {
         password.insertAdjacentHTML(
           "afterend",
-          '<div id="password-error" class="error-message">Password required</div>'
+          '<span id="password-error" class="error-message">Password required</span>'
         );
       } else if (errorPassword === 2) {
         password.insertAdjacentHTML(
           "afterend",
-          '<div id="password-error" class="error-message">Password must be at least 8 characters</div>'
+          '<span id="password-error" class="error-message">Password must be at least 8 characters</span>'
         );
       } else if (errorPassword === 3) {
         password.insertAdjacentHTML(
           "afterend",
-          '<div id="password-error" class="error-message">Password must contain letters and numbers</div>'
+          '<span id="password-error" class="error-message">Password must contain letters and numbers</span>'
         );
       }
 
@@ -371,12 +372,12 @@ function blurFunction(evt) {
       if (errorRepeatPassword === 1) {
         repeatPassword.insertAdjacentHTML(
           "afterend",
-          '<div id="repeat-password-error" class="error-message">Field required</div>'
+          '<span id="repeat-password-error" class="error-message">Field required</span>'
         );
       } else if (errorRepeatPassword === 2) {
         repeatPassword.insertAdjacentHTML(
           "afterend",
-          '<div id="repeat-password-error" class="error-message">Passwords dont match </div>'
+          '<span id="repeat-password-error" class="error-message">Passwords dont match </span>'
         );
       }
 
@@ -389,6 +390,47 @@ function blurFunction(evt) {
 function focusFunction(evt) {
   if (document.querySelector("#" + evt + "-error")) {
     document.querySelector("#" + evt + "-error").remove();
+  }
+}
+
+function buttonSignUpClick() {
+  if (
+    validateName() &&
+    validateLastName() &&
+    validateDni() &&
+    validateBirthdate &&
+    validatePhoneNumber() &&
+    validateAdress() &&
+    validateCity() &&
+    validateZipCode() &&
+    validateEmail() &&
+    validatePassword() &&
+    validatePasswordRepeat() === true
+  ) {
+    alert(
+        "Name: " +
+        name1.value +
+        "\nLastName: " +
+        lastName.value +
+        "\nDNI: " +
+        dni.value +
+        "\nBirthdate: " +
+        birthdate.value +
+        "\nPhone number: " +
+        phoneNumber.value +
+        "\nAdress: " +
+        adress.value +
+        "\nCity: " +
+        city.value +
+        "\nZip code: " +
+        zipCode.value +
+        "\nEmail: " +
+        email.value +
+        "\nPassword: " +
+        password.value
+    );
+  } else {
+    alert("Fill in all the fields correctly");
   }
 }
 
@@ -453,8 +495,10 @@ password.addEventListener("focus", function () {
   focusFunction("password");
 });
 repeatPassword.addEventListener("blur", function () {
-  blurFunction();
+  blurFunction(11);
 });
 repeatPassword.addEventListener("focus", function () {
   focusFunction("repeat-password");
 });
+
+buttonSignUp.addEventListener("click", buttonSignUpClick);
