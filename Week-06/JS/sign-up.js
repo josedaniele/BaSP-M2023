@@ -187,9 +187,9 @@ function validateNumbersAndLetters(passwordTest){
 }
 
 
-function blurFunction(a) {
+function blurFunction(evt) {
     
-    switch(a){
+    switch(evt){
         case 1:
             var errorName = validateName();
 
@@ -359,9 +359,83 @@ function blurFunction(a) {
         
             }else if (errorRepeatPassword === 2) {
         
-                repeatPassword.insertAdjacentHTML('afterend', '<div id="repeat-password-error" class="error-message">Dasswords dont match </div>');
+                repeatPassword.insertAdjacentHTML('afterend', '<div id="repeat-password-error" class="error-message">Passwords dont match </div>');
                 
             }
+            break;
+    
+        default:
+            break;
+    }
+}
+
+function focusFunction(evt){
+    
+    switch (evt) {
+        case 1:
+            if (document.querySelector('#name-error')) {
+                document.querySelector('#name-error').remove();
+            }        
+            break;
+    
+        case 2:
+            if (document.querySelector('#lastName-error')) {
+                document.querySelector('#lastName-error').remove();
+            }        
+            break;
+    
+        case 3:
+            if (document.querySelector('#dni-error')) {
+                document.querySelector('#dni-error').remove();
+            }        
+            break;
+    
+        case 4:
+            if (document.querySelector('#birthdate-error')) {
+                document.querySelector('#birthdate-error').remove();
+            }        
+            break;
+    
+        case 5:
+            if (document.querySelector('#phone-error')) {
+                document.querySelector('#phone-error').remove();
+            }        
+            break;
+    
+        case 6:
+            if (document.querySelector('#adress-error')) {
+                document.querySelector('#adress-error').remove();
+            }        
+            break;
+    
+        case 7:
+            if (document.querySelector('#city-error')) {
+                document.querySelector('#city-error').remove();
+            }        
+            break;
+    
+        case 8:
+            if (document.querySelector('#zip-code-error')) {
+                document.querySelector('#zip-code-error').remove();
+            }        
+            break;
+    
+        case 9:
+            if (document.querySelector('#email-error')) {
+                document.querySelector('#email-error').remove();
+            }        
+            break;
+    
+        case 10:
+            if (document.querySelector('#password-error')) {
+                document.querySelector('#password-error').remove();
+            }        
+            break;
+    
+        case 11:
+            if (document.querySelector('#repeat-password-error')) {
+                document.querySelector('#repeat-password-error').remove();
+            }        
             break;
     
         default:
@@ -373,34 +447,67 @@ function blurFunction(a) {
 name1.addEventListener("blur", function(){
     blurFunction(1);
 })
+name1.addEventListener("focus", function(){
+    focusFunction(1);
+})
 lastName.addEventListener("blur", function(){
     blurFunction(2);
+})
+lastName.addEventListener("focus", function(){
+    focusFunction(2);
 })
 dni.addEventListener("blur", function(){
     blurFunction(3);
 })
+dni.addEventListener("focus", function(){
+    focusFunction(3);
+})
 birthdate.addEventListener("blur", function(){
     blurFunction(4);
+})
+birthdate.addEventListener("focus", function(){
+    focusFunction(4);
 })
 phoneNumber.addEventListener("blur", function(){
     blurFunction(5);
 })
+phoneNumber.addEventListener("focus", function(){
+    focusFunction(5);
+})
 adress.addEventListener("blur", function(){
     blurFunction(6);
+})
+adress.addEventListener("focus", function(){
+    focusFunction(6);
 })
 city.addEventListener("blur", function(){
     blurFunction(7);
 })
+city.addEventListener("focus", function(){
+    focusFunction(7);
+})
 zipCode.addEventListener("blur", function(){
     blurFunction(8);
+})
+zipCode.addEventListener("focus", function(){
+    focusFunction(8);
 })
 email.addEventListener("blur", function(){
     blurFunction(9);
 })
+email.addEventListener("focus", function(){
+    focusFunction(9);
+})
 password.addEventListener("blur", function(){
     blurFunction(10);
 })
+password.addEventListener("focus", function(){
+    focusFunction(10);
+})
 repeatPassword.addEventListener("blur", function(){
     blurFunction(11);
+})
+repeatPassword.addEventListener("focus", function(){
+    focusFunction(11);
 })
 

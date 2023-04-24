@@ -5,15 +5,16 @@
 .sign-up-form div{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width:100%;
+    
 }
 
 @media (min-width:601px){
     .sign-up-form{
         flex-direction: row;
         justify-content:initial;
+        width: 70%;
     }
     .sign-up-form h2{
         flex-basis: 100%;
@@ -30,6 +31,7 @@
     .sign-up-form div:last-child{
         flex-basis: 100%;
         justify-content: center;
+        align-content: space-between;
     }
     .sign-up-form .accept-button{
         width: 40%;

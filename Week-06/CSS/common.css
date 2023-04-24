@@ -48,7 +48,7 @@ p{
     align-items: center;
     flex-wrap: wrap; 
     padding: 60px 0;
-    margin: 100px;
+    margin: 100px 0;
     background-color: #E3EC39E5;
     border-radius: 25px;
     font-weight: 500;
@@ -86,9 +86,10 @@ p{
 }
 
 .error-message{
-    color: #E64848;
+    margin: 10px;
     padding: 5px;
     border: 3px solid #E64848;
     border-radius: 5px;
     font-size: 14px;
+    color: #E64848;
 }
