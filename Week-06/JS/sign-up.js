@@ -16,7 +16,7 @@ var emailRegex = /^[^@]+@[^@]+.[a-zA-Z]{2,}$/;
 
 // create the events and functions
 
-function nameValidation(){
+function validateName(){
     if (name1.value === "") {
         return 1;
     }else if (onlyLetters(name1.value) == false) {
@@ -29,7 +29,7 @@ function nameValidation(){
 }
 
 
-function lastNameValidation(){
+function validateLastName(){
     if (lastName.value === "") {
         return 1;
     }else if (onlyLetters(lastName.value) == false) {
@@ -41,12 +41,12 @@ function lastNameValidation(){
     }
 }
 
-function dniValidation(){
+function validateDni(){
     if (dni.value === "") {
         return 1;
     }else if (isNaN(dni.value)) {
         return 2;
-    }else if (dni.value.length === 7){
+    }else if (dni.value.length != 7){
         return 3;
     }else{
         return true;
@@ -62,12 +62,14 @@ function validateBirthdate(){
 }
 
 function validatePhoneNumber() {
-    Number(phoneNumber.value)
-    if(phoneNumber.value === 0){
+
+    var phoneTypeNumber =Number(phoneNumber.value);
+
+    if(phoneNumber.value === ""){
         return 1;
-    }else if (Number.isInteger(phoneNumber.value)== false) {
+    }else if (Number.isInteger(phoneTypeNumber)== false) {
         return 2;
-    }else if (Number.length === 10) {
+    }else if (phoneNumber.value.length != 10) {
         return 3
     }else{
         return true;
@@ -76,13 +78,15 @@ function validatePhoneNumber() {
 
 function validateAdress(){
     //this var is for the adress.When dont have two parts separated by space return the error
-    var streetNumber = adress.value.split(" ");
+    var streetAndNumber = adress.value.split(" ");
     if (adress.value === "") {
         return 1;
-    }else if (streetNumber.length !==2) {
+    }else if (adress.value.length <5) {
         return 2;
-    }else if(onlyLetters(streetNumber[0])== false && Number(streetNumber[2] == NaN)){
+    }else if (streetAndNumber.length !==2) {
         return 3;
+    }else if(onlyLetters(streetAndNumber[0])== false || isNaN(Number(streetAndNumber[1]))){
+        return 4;
     }else{
         return true;
     }
@@ -103,14 +107,14 @@ function validateZipCode() {
         return 1;
     }else if (isNaN(zipCode.value)) {
         return 2;
-    }else if (zipCode.value.length < 4 && zipCode.value.length >5 ){
+    }else if (zipCode.value.length < 4 || zipCode.value.length >5 ){
         return 3;
     }else{
         return true;
     }
 
 }
-function validationEmail(){
+function validateEmail(){
     if (email.value ==="") {
         return 1;
        
@@ -123,7 +127,7 @@ function validationEmail(){
     }
 }
 
-function validationPassword(){
+function validatePassword(){
     if (password.value === "") {
         return 1;
 
@@ -144,7 +148,7 @@ function validatePasswordRepeat(){
         return 1;
 
     }else if (password.value !== repeatPassword.value) {
-        return 1;
+        return 2;
 
     }else{
         return true;
@@ -182,4 +186,221 @@ function validateNumbersAndLetters(passwordTest){
     }
 }
 
+
+function blurFunction(a) {
+    
+    switch(a){
+        case 1:
+            var errorName = validateName();
+
+            if (errorName === 1) {
+
+                name1.insertAdjacentHTML('afterend', '<div id="name-error" class="error-message">Name required</div>');
+        
+            }else if (errorName === 2) {
+        
+                name1.insertAdjacentHTML('afterend', '<div id="name-error" class="error-message">The name can only contain letters</div>');
+           
+            }else if (errorName === 3) {
+        
+                name1.insertAdjacentHTML('afterend', '<div id="name-error" class="error-message">The name must have a minimum of 3 letters</div>');
+           
+            } ;
+            break;
+        case 2:
+
+            var errorLastName = validateLastName();
+
+            if (errorLastName === 1) {
+
+                lastName.insertAdjacentHTML('afterend', '<div id="lastName-error" class="error-message">Lastname required</div>');
+        
+            }else if (errorLastName === 2) {
+        
+                lastName.insertAdjacentHTML('afterend', '<div id="lastName-error" class="error-message">The lastname can only contain letters</div>');
+           
+            }else if (errorLastName === 3) {
+        
+                lastName.insertAdjacentHTML('afterend', '<div id="lastName-error" class="error-message">The lastname must have a minimum of 3 letters</div>');
+           
+            } ;
+            
+            break;
+        case 3:
+
+            var errorDni = validateDni();
+
+            if (errorDni === 1) {
+
+                dni.insertAdjacentHTML('afterend', '<div id="dni-error" class="error-message">DNI required</div>');
+        
+            }else if (errorDni === 2) {
+        
+                dni.insertAdjacentHTML('afterend', '<div id="dni-error" class="error-message">The DNI can only contain numbers</div>');
+           
+            }else if (errorDni === 3) {
+        
+                dni.insertAdjacentHTML('afterend', '<div id="dni-error" class="error-message">The DNI must be composed of 7 digits.</div>');
+           
+            };
+            
+            break;
+        case 4:
+            var errorBirthdate = validateBirthdate();
+            if (errorBirthdate === 1) {
+
+                birthdate.insertAdjacentHTML('afterend', '<div id="birthdate-error" class="error-message">Birthdate required</div>');
+        
+            }
+           
+            ;
+            break;
+        case 5:
+
+            var errorPhone = validatePhoneNumber();
+
+            if (errorPhone === 1) {
+
+                phoneNumber.insertAdjacentHTML('afterend', '<div id="phone-error" class="error-message">Phone required</div>');
+        
+            }else if (errorPhone === 2) {
+        
+                phoneNumber.insertAdjacentHTML('afterend', '<div id="phone-error" class="error-message">The phone can only contain numbers</div>');
+        
+            }else if (errorPhone === 3) {
+        
+                phoneNumber.insertAdjacentHTML('afterend', '<div id="phone-error" class="error-message">The phone must be composed of 10 digits.</div>');
+        
+            };
+            
+            break;
+        case 6:
+            var errorAdress = validateAdress();
+            if (errorAdress === 1) {
+
+                adress.insertAdjacentHTML('afterend', '<div id="adress-error" class="error-message">Adress required</div>');
+        
+            }else if (errorAdress === 2) {
+        
+                adress.insertAdjacentHTML('afterend', '<div id="adress-error" class="error-message">The adress must have a minimum of 5 charcaters with letters and numbers</div>');
+        
+            }else if (errorAdress === 3 || errorAdress == 4) {
+        
+                adress.insertAdjacentHTML('afterend', '<div id="adress-error" class="error-message">The adress must start with letters and then the numbers separated by a space</div>');
+        
+            }
+
+            break;
+        case 7:
+            var errorCity = validateCity()
+            if (errorCity === 1) {
+
+                city.insertAdjacentHTML('afterend', '<div id="city-error" class="error-message">City required</div>');
+        
+            }else if (errorCity === 2) {
+        
+                city.insertAdjacentHTML('afterend', '<div id="city-error" class="error-message">The city must have a minimum of 5  alphanumerics charcaters</div>');
+        
+            }
+            break;
+        case 8:
+            var errorZipCode = validateZipCode();
+            if (errorZipCode === 1) {
+
+                zipCode.insertAdjacentHTML('afterend', '<div id="zip-code-error" class="error-message">Zip code required</div>');
+        
+            }else if (errorZipCode === 2) {
+        
+                zipCode.insertAdjacentHTML('afterend', '<div id="zip-code-error" class="error-message">The Zip code can only contain numbers</div>');
+        
+            }else if (errorZipCode === 3) {
+        
+                zipCode.insertAdjacentHTML('afterend', '<div id="zip-code-error" class="error-message">The Zip code must have between 4 and 5 digits</div>');
+        
+            }
+            
+            break;
+        case 9:
+
+            var errorEmail = validateEmail();
+            
+            if (errorEmail === 1) {
+
+                email.insertAdjacentHTML('afterend', '<div id="email-error" class="error-message">Email required</div>');
+        
+            }else if (errorEmail === 2) {
+        
+                email.insertAdjacentHTML('afterend', '<div id="email-error" class="error-message">Enter a valid e-mail address(for example juanalberto@gmail.com)</div>');
+           
+            } 
+            
+            break;
+        case 10:
+            var errorPassword = validatePassword();
+            if (errorPassword === 1) {
+
+                password.insertAdjacentHTML('afterend', '<div id="password-error" class="error-message">Password required</div>');
+        
+            }else if (errorPassword === 2) {
+        
+                password.insertAdjacentHTML('afterend', '<div id="password-error" class="error-message">Password must be at least 8 characters</div>');
+                
+            }else if (errorPassword === 3) {
+        
+                password.insertAdjacentHTML('afterend', '<div id="password-error" class="error-message">Password must contain letters and numbers</div>');
+                
+            }
+            break;
+        case 11:
+            var errorRepeatPassword = validatePasswordRepeat();
+            if (errorRepeatPassword === 1) {
+
+                repeatPassword.insertAdjacentHTML('afterend', '<div id="repeat-password-error" class="error-message">Field required</div>');
+        
+            }else if (errorRepeatPassword === 2) {
+        
+                repeatPassword.insertAdjacentHTML('afterend', '<div id="repeat-password-error" class="error-message">Dasswords dont match </div>');
+                
+            }
+            break;
+    
+        default:
+            break;
+    }
+}
+
+
+name1.addEventListener("blur", function(){
+    blurFunction(1);
+})
+lastName.addEventListener("blur", function(){
+    blurFunction(2);
+})
+dni.addEventListener("blur", function(){
+    blurFunction(3);
+})
+birthdate.addEventListener("blur", function(){
+    blurFunction(4);
+})
+phoneNumber.addEventListener("blur", function(){
+    blurFunction(5);
+})
+adress.addEventListener("blur", function(){
+    blurFunction(6);
+})
+city.addEventListener("blur", function(){
+    blurFunction(7);
+})
+zipCode.addEventListener("blur", function(){
+    blurFunction(8);
+})
+email.addEventListener("blur", function(){
+    blurFunction(9);
+})
+password.addEventListener("blur", function(){
+    blurFunction(10);
+})
+repeatPassword.addEventListener("blur", function(){
+    blurFunction(11);
+})
 
