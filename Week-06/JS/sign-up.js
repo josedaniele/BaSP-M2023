@@ -45,7 +45,7 @@ function validateDni() {
     return 1;
   } else if (isNaN(dni.value)) {
     return 2;
-  } else if (dni.value.length != 7) {
+  } else if (dni.value.length > 7) {
     return 3;
   } else {
     return true;
