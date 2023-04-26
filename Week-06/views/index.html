@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="../CSS/header.css">
         <link rel="stylesheet" href="../CSS/main.css">
         <link rel="stylesheet" href="../CSS/footer.css">
+        <script src="../JS/contact.js" defer></script>
         <title>MegaRocket-Landing</title>
         <link rel="icon" href="../../assets/images/radium-rocket-logo.png" type="image/png">
     </head>
@@ -164,25 +165,25 @@
                             <label for="name" name="name">
                                 Name
                             </label>
-                            <input type="text" name="name" placeholder="John">
+                            <input id="name" type="text" name="name" placeholder="John">
                         </div>
                         <div class="inputs-contact">
                             <label for="surname" name="surname">
                                 Surname
                             </label>
-                            <input type="text" name="surname" placeholder=" Johnson">
+                            <input id="lastname" type="text" name="surname" placeholder=" Johnson">
                         </div>
                         <div class="inputs-contact">
                             <label for="email" name="email">
                                 E-Mail
                             </label>
-                            <input type="email" name="email" placeholder="johnjohnson@gmail.com">
+                            <input id="email" type="email" name="email" placeholder="johnjohnson@gmail.com">
                         </div>
                         <div class="inputs-contact">
                             <label for="contact-reason" name="contact-reason">
                                 Contact Reason
                             </label>
-                            <select name="contact-reason">
+                            <select id="contact-reason" name="contact-reason">
                                 <option disabled selected>Choose one</option>
                                 <option value="membership">I want to know the memberships and costs</option>
                                 <option value="suggestion">I want to make a query or suggestion</option>
@@ -192,7 +193,7 @@
                         </div>
                         <div class="inputs-contact">
                             <label for="query-message" name="query-message">Message</label>
-                            <textarea name="query-message" cols="40" rows="10" placeholder="Write here..."></textarea>
+                            <textarea id="message" name="query-message" cols="40" rows="10" placeholder="Write here..."></textarea>
                             <input id="submit-button-contact" type="submit" value="Send">
                         </div>
                     </form>
