@@ -78,6 +78,10 @@ p{
 .sign-up-main nav{
     margin: 100px 50px 20px;
 }
+.log-in-main nav ul,
+.sign-up-main nav ul{
+    height: 150px;
+}
 
 .sign-up-form,
 .log-in-form{
