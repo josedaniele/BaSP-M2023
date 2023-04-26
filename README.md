@@ -62,5 +62,16 @@ In the CSS corrections, we simply removed unnecessary white spaces from the file
 ### Check out the excersices of JS in this week.
 https://josedaniele.github.io/BaSP-M2023/Week-05/index.html
 
+## Week 6 Log-in and Sign-up Forms
+
+During week 6 of the project, we focused on designing and developing the log-in and sign-up forms using HTML, CSS, and JavaScript. Specifically, we used ES5 to validate the various input fields throughout the forms.
+
+If any of the input fields are filled out incorrectly, a span alert message is displayed on the screen with specific error messages. Once the user corrects their input, they can attempt to log in or sign up again.
+
+Once the user enters their information and clicks the log-in or sign-up button, the script checks if all the required fields are filled in correctly. If the information is valid, the user's data is displayed on the screen
+
+### Check out our project in this week.
+https://josedaniele.github.io/BaSP-M2023/Week-06/views/index.html
+
 
 
