@@ -26,6 +26,10 @@
         </div>
         <div class="login-sign-header">
             <button class="burguer-menu"><img src="../../assets/images/burger-menu.svg" alt="burguer-menu"></button>
+            <a href="../views/index.html">
+                Home
+                <img src="../../assets/images/home.svg" alt="home-icon">
+            </a>
             <a href="../views/login.html">
                 Log-in
                 <img src="../../assets/images/login-icon.png" alt="login-icon">
@@ -33,19 +37,77 @@
         </div>
     </header>
     <main class="sign-up-main">
+        <aside>
+            <nav>
+                <ul>
+                    <div class="login-sign-nav">
+                        <li>
+                            <a href="./login.html">
+                                Log-in
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./sign-up.html">
+                                Sign-up
+                            </a>
+                        </li>
+                    </div>
+                    <li>
+                        <a href="#home-container">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#features-container">
+                            Features
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact-container">
+                            Contact us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#activities-container">
+                            Activities
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#memberships-container">
+                            Memberships
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#our-story-container">
+                            Our story
+                        </a>
+                    </li>
+                </ul>
+                <div class="contact-aside">
+                    <div>
+                        <img src="../../assets/images/location-pin.png" alt="location-icon">
+                        <p>Av. Pellegrini 3535</a>
+                    </div>
+                    <div>
+                        <img src="../../assets/images/ring-phone.png" alt="ring-phone">
+                        <a href="tel:+34678567876">+34678567876</a>
+                    </div>
+                </div>
+            </nav>
+        </aside>
         <form class="sign-up-form">
             <h2>Sign Up</h2>
             <div>
                 <label for="name">Name</label>
-                <input id= "name" type="text" name="name">
+                <input id= "name" type="text" name="name" placeholder="John">
             </div>
             <div>
                 <label for="lastName">LastName</label>
-                <input id="last-name" type="text" name="lastName">
+                <input id="last-name" type="text" name="lastName" placeholder="Johnson">
             </div>
             <div>
                 <label for="dni">DNI</label>
-                <input id="dni" type="text" name="dni" id="">
+                <input id="dni" type="text" name="dni" placeholder="22667788">
             </div>
             <div>
                 <label for="birthdate">Birthdate</label>
@@ -53,34 +115,34 @@
             </div>
             <div>
                 <label for="phone">Phone Number</label>
-                <input id="phone-number" type="text" name="phone">
+                <input id="phone-number" type="text" name="phone" placeholder="3412699765">
             </div>
             <div>
                 <label for="adress">Adress</label>
-                <input id="adress" type="text" name="adress">
+                <input id="adress" type="text" name="adress" placeholder="Sabin 2254">
             </div>
             <div>
                 <label for="city">City</label>
-                <input id="city" type="text" name="city">
+                <input id="city" type="text" name="city" placeholder="Rosario">
             </div>
             <div>
                 <label for="zipCode">Zip Code</label>
-                <input id="zip-code" type="text" name="zipCode">
+                <input id="zip-code" type="text" name="zipCode" placeholder="2000">
             </div>
             <div>
                 <label for="email">Email</label>
-                <input id="email" type="text" name="email">
+                <input id="email" type="text" name="email" placeholder="johnjohnson@gmail.com">
             </div>
             <div>
                 <label>Password</label>
-                <input id="password" type="password">
+                <input id="password" type="password" placeholder="*********">
             </div>
             <div>
                 <label>Repeat Password</label>
-                <input id="repeat-password" type="password">
+                <input id="repeat-password" type="password" placeholder="***********">
             </div>
             <div>
-                <input type="button" id="sign-up-button" class="accept-button" value="Sign-up">
+                <input type="button" id="sign-up-button" class="accept-button" value="Register">
             </div>
         </form>
     </main>

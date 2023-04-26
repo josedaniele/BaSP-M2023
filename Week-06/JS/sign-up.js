@@ -96,7 +96,7 @@ function validateAdress() {
 function validateCity() {
   if (city.value === "") {
     return 1;
-  } else if (city.value.length < 3) {
+  } else if (city.value.length < 5) {
     return 2;
   } else {
     return true;
@@ -234,7 +234,7 @@ function blurFunction(evt) {
       } else if (errorDni === 3) {
         dni.insertAdjacentHTML(
           "afterend",
-          '<span id="dni-error" class="error-message">The DNI must be composed of 7 digits.</span>'
+          '<span id="dni-error" class="error-message">The DNI must  have a minimum of 7 digits.</span>'
         );
       }
 

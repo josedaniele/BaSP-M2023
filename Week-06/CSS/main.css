@@ -2,34 +2,6 @@ main{
     background-color: #535353;
     text-align: center;
 }
-
-aside{
-    display: none;
-    padding: 55px 10%;
-    background-color: #000000e8;
-    text-align: center;
-}
-aside a,
-aside p{
-    font-size: 2rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #ffff;
-}
-nav{
-    margin-top: 100px;
-}
-nav ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 650px;
-}
-.contact-aside{
-    display: flex;
-    flex-direction: column;
-}
 #home-container{
     display: flex;
     flex-direction: column;
@@ -310,16 +282,16 @@ nav ul {
         flex-direction: column;
         justify-content: space-between;
     }
-    h2{
-        flex-basis: 100%;
-        justify-content: center;
-    }
     nav a,
     nav p{
         color: #000000;
     }
     .login-sign-nav{
         display: none;
+    }
+    h2{
+        flex-basis: 100%;
+        justify-content: center;
     }
     #home-container{
         height: 100vh;

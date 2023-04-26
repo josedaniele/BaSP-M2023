@@ -1,3 +1,30 @@
+
+aside{
+    padding: 55px 10%;
+    background-color: #000000e8;
+    text-align: center;
+}
+aside a,
+aside p{
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffff;
+}
+nav{
+    margin-top: 100px;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 650px;
+}
+.contact-aside{
+    display: flex;
+    flex-direction: column;
+}
 h2{
     display: flex;
     flex-wrap: wrap;
@@ -33,11 +60,23 @@ p{
 .log-in-main,
 .sign-up-main{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: url(../../assets/images/background-log-in-sign-up.jpg);
     background-size: cover;
 
+}
+.log-in-main aside,
+.sign-up-main aside{
+    width: 100%;
+    padding: 0;
+    background-color: #000000e8;
+    text-align: center;
+}
+.log-in-main nav,
+.sign-up-main nav{
+    margin: 100px 50px 20px;
 }
 
 .sign-up-form,
@@ -92,4 +131,12 @@ p{
     border-radius: 5px;
     font-size: 14px;
     color: #E64848;
+}
+@media (min-width: 1025px){
+    aside{
+        display: none;
+    }
+    .login-sign-nav{
+        display: none;
+    }
 }
