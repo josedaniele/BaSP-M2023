@@ -1,0 +1,10 @@
+.log-in-form{
+    width: 70%;
+    height: 450px;
+}
+
+@media (min-width:1025px){
+    .log-in-form{
+        width: 40%;
+    }
+}

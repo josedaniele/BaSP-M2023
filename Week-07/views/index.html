@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Lato:wght@100;400;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/reset.css">
+        <link rel="stylesheet" href="../CSS/common.css">
+        <link rel="stylesheet" href="../CSS/header.css">
+        <link rel="stylesheet" href="../CSS/main.css">
+        <link rel="stylesheet" href="../CSS/footer.css">
+        <script src="../JS/contact.js" defer></script>
+        <title>MegaRocket-Landing</title>
+        <link rel="icon" href="../../assets/images/radium-rocket-logo.png" type="image/png">
+    </head>
+    <body>
+        <header>
+            <div class="logo-header-container">
+                <img class="logo" src="../../assets/images/radium-rocket-logo.png" alt="radium-rocket-logo">
+                <h1>
+                    megarocket s.a
+                </h1>
+            </div>
+            <div class="login-sign-header">
+                <button class="burguer-menu"><img src="../../assets/images/burger-menu.svg" alt="burguer-menu"></button>
+                <a href="../views/login.html">
+                    Log-in
+                    <img src="../../assets/images/login-icon.png" alt="login-icon">
+                </a>
+                <a href="../views/sign-up.html">
+                    Sign-up
+                    <img src="../../assets/images/sign-up-icon.png" alt="sign-up-icon">
+                </a>
+            </div>
+        </header>
+        <main>
+            <aside>
+                <nav>
+                    <ul>
+                        <div class="login-sign-nav">
+                            <li>
+                                <a href="./login.html">
+                                    Log-in
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./sign-up.html">
+                                    Sign-up
+                                </a>
+                            </li>
+                        </div>
+                        <li>
+                            <a href="#home-container">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#features-container">
+                                Features
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact-container">
+                                Contact us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#activities-container">
+                                Activities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#memberships-container">
+                                Memberships
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#our-story-container">
+                                Our story
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="contact-aside">
+                        <div>
+                            <img src="../../assets/images/location-pin.png" alt="location-icon">
+                            <p>Av. Pellegrini 3535</a>
+                        </div>
+                        <div>
+                            <img src="../../assets/images/ring-phone.png" alt="ring-phone">
+                            <a href="tel:+34678567876">+34678567876</a>
+                        </div>
+                    </div>
+                </nav>
+            </aside>
+            <div>
+                <section id="home-container">
+                    <h2>
+                        Don't sit <span class="span-h2">get fit</span>
+                    </h2>
+                    <p>
+                        Your best version is waiting for you,
+                        join Mega Rocket Gym today.
+                    </p>
+                    <p>
+                        In this app you can choose our
+                        best personal trainers and the best classes
+                    </p>
+                    <p>
+                        and have a bunch of privileges
+                        with our different
+                        memberships.
+                    </p>
+                </section>
+                <section id="features-container">
+                    <h2>
+                        Featu<span class="span-h2">res</span>
+                    </h2>
+                    <article class="reservation-features">
+                        <h3>
+                            Reservations
+                        </h3>
+                        <p>
+                            Choose your favorite class and
+                            ensure your place
+                        </p>
+                    </article>
+                    <article class="schedule-features">
+                        <h3>
+                            Schedule
+                        </h3>
+                        <p>
+                            Monday to saturday
+                            08 am till 08 pm
+                        </p>
+                    </article>
+                    <article class="memberships-features">
+                        <h3>
+                            Memberships
+                        </h3>
+                        <p>
+                            Pick which one is
+                            best for you
+                        </p>
+                    </article>
+                    <article class="suggestions-features">
+                        <h3>
+                            Contact and
+                            suggestions
+                        </h3>
+                        <p>
+                            Your opinion is important to us,
+                            it helps us improve
+                        </p>
+                    </article>
+                </section>
+                <section id="contact-container">
+                    <h2>
+                        Contact<span class="span-h2">us</span>
+                    </h2>
+                    <form>
+                        <div class="inputs-contact">
+                            <label for="name" name="name">
+                                Name
+                            </label>
+                            <input id="name" type="text" name="name" placeholder="John">
+                        </div>
+                        <div class="inputs-contact">
+                            <label for="surname" name="surname">
+                                Surname
+                            </label>
+                            <input id="lastname" type="text" name="surname" placeholder=" Johnson">
+                        </div>
+                        <div class="inputs-contact">
+                            <label for="email" name="email">
+                                E-Mail
+                            </label>
+                            <input id="email" type="email" name="email" placeholder="johnjohnson@gmail.com">
+                        </div>
+                        <div class="inputs-contact">
+                            <label for="contact-reason" name="contact-reason">
+                                Contact Reason
+                            </label>
+                            <select id="contact-reason" name="contact-reason">
+                                <option disabled selected>Choose one</option>
+                                <option value="membership">I want to know the memberships and costs</option>
+                                <option value="suggestion">I want to make a query or suggestion</option>
+                                <option value="claim">I want to make a claim</option>
+                                <option value="other">Other...</option>
+                            </select>
+                        </div>
+                        <div class="inputs-contact">
+                            <label for="query-message" name="query-message">Message</label>
+                            <textarea id="message" name="query-message" cols="40" rows="10" placeholder="Write here..."></textarea>
+                            <input id="submit-button-contact" type="submit" value="Send">
+                        </div>
+                    </form>
+                </section>
+                <section id="activities-container">
+                    <h2>
+                        Activi<span class="span-h2">ties</span>
+                    </h2>
+                    <div class="line-activities">
+                        <article class="crossfit-article">
+                            <h3>
+                                Crossfit
+                            </h3>
+                        </article>
+                        <article class="box-article">
+                            <h3>
+                                Box
+                            </h3>
+                        </article>
+                    </div>
+                    <div class="line-activities">
+                        <article class="functional-article">
+                            <h3>
+                                Functional
+                            </h3>
+                        </article>
+                        <article class="spinning-article">
+                            <h3>
+                                Spinning
+                            </h3>
+                        </article>
+                        <article class="fitness-article">
+                            <h3>
+                                Fitness
+                            </h3>
+                        </article>
+                    </div>
+                </section>
+                <section id="memberships-container">
+                    <h2>
+                        Member<span class="span-h2">ships</span>
+                    </h2>
+                    <ul>
+                        <li class="basic-membership">
+                            <h3>
+                                Only classes
+                                memberships
+                            </h3>
+                            <p>
+                                Free access to
+                                classes with
+                                registration
+                            </p>
+                            <p>
+                                Schedule view
+                            </p>
+                        </li>
+                        <li class="classic-membership">
+                            <h3>
+                                Classic
+                                membership
+                            </h3>
+                            <p>
+                                Free access to the gym
+                            </p>
+                            <p>
+                                Personalized monitoring
+                                & coaching
+                            </p>
+                            <p>
+                                Schedule view
+                            </p>
+                        </li>
+                        <li class="black-membership">
+                            <h3>
+                                Black 
+                                membership
+                            </h3>
+                            <p class="display-only-desktop">
+                                Free access to the gym
+                            </p>
+                            <p class="display-only-desktop">
+                                Free access to classes with
+                                registration
+                            </p>
+                            <p>
+                                Personalized monitoring
+                                & coaching
+                            </p>
+                            <p>
+                                Schedule view
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+                <section id="our-story-container">
+                    <h2>
+                        Our <span class="span-h2">story</span>
+                    </h2>
+                    <div>
+                        <p>
+                            We are one of the oldest but most modern gyms.
+                            50 trainers work in MR GYM and more than 200 people
+                            come to our place everyday.
+                        </p>
+                        <p>
+                            We are dedicated to helping you improve 
+                            your quality of life in a fun and active way
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <a href="#" target="_blank">
+                <img src="../../assets/images/instagram-logo.png" alt="instagram-logo">
+                @rocketgym
+            </a>
+            <a href="tel:+34678567876">
+                <img src="../../assets/images/whatsapp-logo.png" alt="whatsapp-logo">
+                +34678567876
+            </a>
+            <a href="#" target="_blank">
+                <img src="../../assets/images/facebook-logo.png" alt="facebook-logo">
+                Mega Rocket Gym
+            </a>
+            <p>
+               Mega rocket sa
+               <span>All rights reserved. 2023©</span>
+            </p>
+        </footer>
+    </body>
+</html>

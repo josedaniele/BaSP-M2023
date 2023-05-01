@@ -1,0 +1,373 @@
+main{
+    background-color: #535353;
+    text-align: center;
+}
+#home-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80vh;
+    padding: 1em 1em 9em 1em;
+    background-image:linear-gradient(#00000080, #00000080), url(../../assets/images/mobile-dont-sit.png);
+    background-size:cover;
+}
+#features-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+#features-container article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 85%;
+    height: 50vh;
+    background-size: cover ;
+    background-position: center;
+    border-radius: 30px;
+}
+#features-container h3{
+    font-weight: 900;
+    color: #E3EC39;
+}
+#features-container p{
+    text-align: center;
+    font-weight: 600;
+    white-space: pre-line;
+}
+.reservation-features{
+    background-image: linear-gradient(#00000080, #00000080),url(../../assets/images/landing-reservations-background.png);
+}
+.schedule-features{
+    background-image: linear-gradient(#00000080, #00000080),url(../../assets/images/landing-schedule-background.jpg);
+}
+.memberships-features{
+    background-image: linear-gradient(#00000080, #00000080),url(../../assets/images/landing-memberships-background.jpg);
+}
+.suggestions-features{
+    background-image: linear-gradient(#00000080, #00000080),url(../../assets/images/landing-conttact-suggestions-background.png);
+}
+#contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contact-container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+    height: 80vh;
+    padding: 30px 0;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+}
+.inputs-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs-contact input,
+.inputs-contact select{
+    height: 30px;
+    border: 1px solid #373867;
+}
+.inputs-contact input, 
+.inputs-contact select,
+.inputs-contact textarea{
+    width: 80%;
+    background: linear-gradient(0deg, #00000033, #00000033), #FFFFFF;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #535353fc;
+    
+}
+.inputs-contact textarea{
+    border: none;
+}
+#submit-button-contact{
+    width: 75px;
+    height: 35px;
+    margin: 20px auto;
+    background-color: #E3EC39;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: #000000;
+}
+
+.line-activities{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    margin: 50px 0px;
+}
+#activities-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+#activities-container h2{
+    align-self: center;
+}
+#activities-container article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    text-align: center;
+}
+#activities-container h3{
+    background-color: hsla(0, 0%, 7%, 0.568);
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+.crossfit-article{
+    background-image: linear-gradient(#0000004d, #0000004d),url(../../assets/images/landing-crossfit-background.jpg);  
+}
+.box-article{
+    background-image: linear-gradient(#0000004d, #0000004d),url(../../assets/images/landing-box-background.png);  
+}
+.functional-article{
+    background-image: linear-gradient(#0000004d, #0000004d),url(../../assets/images/landing-functional-background.jpg);  
+}
+.spinning-article{
+    background-image: linear-gradient(#0000004d, #0000004d),url(../../assets/images/landing-spinning-background.png);  
+}
+.fitness-article{
+    background-image: linear-gradient(#0000004d, #0000004d),url(../../assets/images/landing-fitness-background.jpg);  
+}
+#memberships-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#memberships-container ul{
+    width: 90%;
+}
+#memberships-container li{
+    height: 80vh;
+    margin: 70px 0;
+    background-size:cover;
+    background-position: center;
+    border-radius: 10px;
+    white-space: pre-line;
+}
+#memberships-container p{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.basic-membership{
+    background-image: linear-gradient(#000000b3, #000000b3),url(../../assets/images/landing-only-classes-membership-background.png);
+}
+.classic-membership{
+    background-image: linear-gradient(#000000b3, #000000b3),url(../../assets/images/landing-classic-membership-background.png);
+}
+.black-membership{
+    background-image: linear-gradient(#000000b3, #000000b3),url(../../assets/images/landing-black-membership-background.jpg);
+}
+.display-only-desktop{
+    display: none;
+}
+#our-story-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 0px 200px;
+}
+#our-story-container div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    width: 90%;
+    background: linear-gradient(0deg, #00000033, #00000033), #e0e0e0e6;
+    border-radius: 18px;
+    white-space: pre-line;
+}
+#our-story-container p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #404040;
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    h2{
+        font-size: 6.25rem;
+    }
+    main p{
+        font-size: 1.9rem;
+    }
+    #home-container{
+        height: 200vh;
+    }
+    #features-container{
+        gap: 140px;
+    }
+    #features-container article{
+        height: 450px;
+    }
+    #features-container h3{
+        font-size: 3.5rem;
+    }
+    #features-container p{
+        font-size: 2.8rem;
+    }
+
+    #contact-container form{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .inputs-contact:not(:last-child){
+        width: 45%;
+    }
+    #activities-container article{
+        height: 65vh;
+    }
+    #activities-container h3{
+        font-size: 5rem;
+    }
+    #memberships-container li{
+        height: 65vh;
+    }
+    .basic-membership{
+        background-image: linear-gradient(#8b7c7c66, #8b7c7c66),url(../../assets/images/landing-only-classes-membership-background.png);
+    }
+    .classic-membership{
+        background-image: linear-gradient(#8b7c7c66, #8b7c7c66),url(../../assets/images/landing-classic-membership-background.png);
+    }
+    .black-membership{
+        background-image: linear-gradient(#8b7c7c66, #8b7c7c66),url(../../assets/images/landing-black-membership-background.jpg);
+    }
+    #our-story-container div{
+        height: 40vh;
+    }
+    #our-story-container p{
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 1025px){
+    h2{
+        font-size: 6.25rem;
+    }
+    main{
+        display: flex;
+    }
+    aside{
+        display: flex;
+        justify-content: center;
+        width: 5%;
+        background-color: #E3EC39;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    nav a,
+    nav p{
+        color: #000000;
+    }
+    .login-sign-nav{
+        display: none;
+    }
+    h2{
+        flex-basis: 100%;
+        justify-content: center;
+    }
+    #home-container{
+        height: 100vh;
+        background-image: linear-gradient(#00000080, #00000080),url(../../assets/images/landing-dont-sit-background.jpg);
+    }
+    #home-container h2{
+        flex-basis: content;
+    }
+    #home-container p{
+        font-size: 1.9rem;
+        white-space: normal;
+    }
+    #features-container{
+        justify-content: center;
+    }
+    #features-container article{
+        width: 40%;
+        height: 35vh;
+    }
+    #features-container p{
+        font-size: 1.9rem;
+        white-space: normal;
+    }
+    #contact-container form{
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 60vh;
+    }
+    .inputs-contact label{
+        padding: 10px 0;
+        text-align: left;
+    }
+    .inputs-contact:not(:last-child){
+        width: 25%;
+    }
+    .inputs-contact:last-child{
+        width: 100%;
+    }
+
+    .line-activities{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    #activities-container article{
+        width: 30%;
+        height: 25vh;
+    }
+    #memberships-container ul{
+        width: 40%;
+    }
+    #memberships-container li{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 70vh;
+    }
+
+    #our-story-container{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #our-story-container h2{
+        flex-basis:content ;
+        font-size: 3.75rem;
+    }
+    #our-story-container div{
+        width: 55%;
+        height: 50vh;
+    }
+    #our-story-container p{
+        font-size: 1.5rem;
+    }
+    .display-only-desktop{
+        display: block;
+    }
+    
+}
