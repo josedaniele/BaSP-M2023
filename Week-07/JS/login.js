@@ -3,7 +3,6 @@
 var email = document.querySelector("#email");
 var password = document.querySelector("#password");
 var buttonLogin = document.querySelector("#log-in-button");
-var emailRegex = /^[^@]+@[^@]+.[a-zA-Z]{2,}$/;
 
 // create the events and functions
 
@@ -48,13 +47,27 @@ function focusInputEmailPassword() {
     document.querySelector("#email-password-error").remove();
   }
 }
+function fetchLogin(){
+
+  fetch(`https://api-rest-server.vercel.app/login?email=${email.value}&password=${password.value}`)
+    .then(function(response){
+      return response.json();
+    })
+    .then(function(data){
+      alert(data.msg);
+    })
+    .catch(function(errors){
+        console.log(errors.msg)
+      
+    })
+}
 
 
 
 function onClickLogIn() {
   if (emailValidation() && passwordValidation() == true) {
     fetchLogin()
-    // alert("Email: " + email.value + "\nPassword: " + password.value);
+    alert("Email: " + email.value + "\nPassword: " + password.value);
   } else {
     alert("Email or password error");
   }
