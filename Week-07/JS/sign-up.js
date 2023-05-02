@@ -13,6 +13,22 @@ var repeatPassword = document.querySelector("#repeat-password");
 var buttonSignUp = document.querySelector("#sign-up-button");
 var emailRegex = /^[^@]+@[^@]+.[a-zA-Z]{2,}$/;
 
+//localStorage get items
+var savedData = localStorage.getItem('formData');
+if (savedData !== null) {
+  var data = JSON.parse(savedData);
+  name1.value= data.name;
+  lastName.value= data.lastName;
+  dni.value= data.dni;
+  birthdate.value= data.birthdate;
+  phoneNumber.value= data.phoneNumber;
+  adress.value= data.adress;
+  city.value= data.city;
+  zipCode.value= data.zipCode;
+  email.value= data.email;
+  password.value= data.password;
+  repeatPassword.value= data.password;
+}
 //fucntions validation
 
 function validateName() {
@@ -424,6 +440,23 @@ function fetchSignUp(){
       alert(data.msg)
     }
   })
+  .then(function(){
+    //create object
+    var data = {
+      name: name1.value,
+      lastName: lastName.value,
+      dni: dni.value,
+      birthdate: birthdate.value,
+      phoneNumber: phoneNumber.value,
+      adress: adress.value,
+      city: city.value,
+      zipCode: zipCode.value,
+      email: email.value,
+      password: password.value
+    };
+    // Convert object to JSON and save to localStorage
+    localStorage.setItem('formData', JSON.stringify(data));
+  })
   .catch(function(errors){
     alert(errors)  
   })
@@ -446,29 +479,6 @@ function buttonSignUpClick() {
     validatePasswordRepeat() === true
   ) {
     fetchSignUp();
-    
-    // alert(
-    //     "Name: " +
-    //     name1.value +
-    //     "\nLastName: " +
-    //     lastName.value +
-    //     "\nDNI: " +
-    //     dni.value +
-    //     "\nBirthdate: " +
-    //     birthdate.value +
-    //     "\nPhone number: " +
-    //     phoneNumber.value +
-    //     "\nAdress: " +
-    //     adress.value +
-    //     "\nCity: " +
-    //     city.value +
-    //     "\nZip code: " +
-    //     zipCode.value +
-    //     "\nEmail: " +
-    //     email.value +
-    //     "\nPassword: " +
-    //     password.value
-    // );
   } else {
     alert("Fill in all the fields correctly");
   }
