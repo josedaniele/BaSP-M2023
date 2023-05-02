@@ -54,11 +54,16 @@ function fetchLogin(){
       return response.json();
     })
     .then(function(data){
-      alert(data.msg);
+      if(data.success===false){
+        throw data.errors[0].msg;
+      }else{
+        alert('Successful request:');
+        alert(data.msg);
+      }
     })
     .catch(function(errors){
-        console.log(errors.msg)
-      
+      alert('Error request');
+      alert(errors);
     })
 }
 

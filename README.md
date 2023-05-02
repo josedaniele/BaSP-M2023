@@ -62,7 +62,7 @@ In the CSS corrections, we simply removed unnecessary white spaces from the file
 ### Check out the excersices of JS in this week.
 https://josedaniele.github.io/BaSP-M2023/Week-05/index.html
 
-## Week 6 Log-in and Sign-up Forms
+## Week 06 Log-in and Sign-up Forms
 
 During week 6 of the project, we focused on designing and developing the log-in and sign-up forms using HTML, CSS, and JavaScript. Specifically, we used ES5 to validate the various input fields throughout the forms.
 
@@ -73,5 +73,20 @@ Once the user enters their information and clicks the log-in or sign-up button, 
 ### Check out our project in this week.
 https://josedaniele.github.io/BaSP-M2023/Week-06/views/index.html
 
+## Week 07 Log-in & Sign-up Fetch and Local Storage
+This week, we worked on implementing the fetch API on the login.js and sign-up.js pages using the GET method to validate user login and registration data. We also added functionality to save user data to the local storage on successful registration.
+
+The fetch API allows us to make network requests to the server and receive responses asynchronously. We used it to send user input data to the server and receive a response indicating whether the input data was valid or not.
+
+By implementing this functionality, we can improve the user experience by providing immediate feedback to the user if there are any errors in their input data.
+
+To validate the user input, we used the GET method to send the user data to the server and receive a response containing the validation status.
+
+In addition, we implemented local storage functionality on the sign-up page. This feature allowed us to save user data to the local storage on successful registration, so that the next time the user logs in, their data will be auto-filled.
+
+Overall, this week's work was focused on implementing validation for user input using the fetch API and GET method, as well as implementing local storage functionality for the sign-up page.
+
+### Check out our project in this week.
+https://josedaniele.github.io/BaSP-M2023/Week-07/views/index.html
 
 

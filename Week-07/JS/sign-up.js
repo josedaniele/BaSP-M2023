@@ -428,7 +428,7 @@ function fetchSignUp(){
   var month = (birthdateValue.getMonth() + 1).toString().padStart(2, '0');
   var year = birthdateValue.getFullYear();
   birthdateValue = `${month}/${day}/${year}`;
-//request
+  //request
   fetch(`https://api-rest-server.vercel.app/signup?name=${name1.value}&lastName=${lastName.value}&dni=${dni.value}&dob=${birthdateValue}&phone=${phoneNumber.value}&address=${adress.value}&city=${city.value}&zip=${zipCode.value}&email=${email.value}&password=${password.value}`)
   .then(function(response){
     return response.json();
@@ -437,7 +437,8 @@ function fetchSignUp(){
     if(data.success===false){
       throw data.errors[0].msg;
     }else{
-      alert(data.msg)
+      alert('successful request');
+      alert(data.msg);
     }
   })
   .then(function(){
@@ -458,7 +459,8 @@ function fetchSignUp(){
     localStorage.setItem('formData', JSON.stringify(data));
   })
   .catch(function(errors){
-    alert(errors)  
+    alert('Error request');
+    alert(errors) ; 
   })
 }
 
