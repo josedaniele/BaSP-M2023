@@ -3,6 +3,9 @@
 var email = document.querySelector("#email");
 var password = document.querySelector("#password");
 var buttonLogin = document.querySelector("#log-in-button");
+var modalContainer = document.getElementById("myModal");
+var span = document.getElementsByClassName("close")[0];
+var modalText = document.querySelector('#modal-text');
 
 // create the events and functions
 
@@ -57,24 +60,32 @@ function fetchLogin(){
       if(data.success===false){
         throw data.errors[0].msg;
       }else{
-        alert('Successful request:');
-        alert(data.msg);
+        modalText.innerHTML = 'Success request: '+ data.msg
+        modalContainer.style.display = "block";
       }
     })
-    .catch(function(errors){
-      alert('Error request');
-      alert(errors);
+    .catch(function(){
+      modalText.innerHTML = 'Error request: wrong email or password'
+      modalContainer.style.display = "block";
     })
 }
 
-
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modalContainer.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalContainer) {
+    modalContainer.style.display = "none";
+  }
+}
 
 function onClickLogIn() {
   if (emailValidation() && passwordValidation() == true) {
     fetchLogin()
-    alert("Email: " + email.value + "\nPassword: " + password.value);
   } else {
-    alert("Email or password error");
+    alert("Email and password required");
   }
 }
 

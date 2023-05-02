@@ -42,13 +42,6 @@ function validateEmail() {
   }
 }
 
-function validateContactReason() {
-  if (contactReason.value == "") {
-    return 1;
-  } else {
-    return true;
-  }
-}
 
 function validateMessage() {
   if (message.value == "") {
@@ -131,14 +124,6 @@ function blurFunction(evt) {
       }
       break;
     case 4:
-      var errorConctactReason = validateContactReason();
-      if (errorConctactReason === 1) {
-        contactReason.insertAdjacentHTML(
-          "afterend",
-          '<span id="contact-reason-error" class="error-message">Contact reason required</span>'
-        );
-      }
-    case 5:
       var errorMessage = validateMessage();
       if (errorMessage === 1) {
         message.insertAdjacentHTML(
@@ -166,10 +151,9 @@ function focusFunction(evt) {
 function buttonSignUpClick(event) {
     event.preventDefault();
   if (
-    validateName() &&
-    validateLastName() &&
-    validateEmail() &&
-    validateContactReason() &&
+    validateName() ===true &&
+    validateLastName() === true &&
+    validateEmail() ===true &&
     validateMessage() === true
   ) {
     alert(
@@ -207,14 +191,8 @@ name1.addEventListener("blur", function () {
   email.addEventListener("focus", function () {
     focusFunction("email");
   });
-  contactReason.addEventListener("blur", function () {
-    blurFunction(4);
-  });
-  contactReason.addEventListener("focus", function () {
-    focusFunction("contact-reason");
-  });
   message.addEventListener("blur", function () {
-    blurFunction(5);
+    blurFunction(4);
   });
   message.addEventListener("focus", function () {
     focusFunction("message");

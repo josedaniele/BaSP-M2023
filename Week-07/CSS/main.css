@@ -59,7 +59,7 @@ main{
     flex-direction: column;
     justify-content: space-around;
     width: 90%;
-    height: 80vh;
+    height: 650px;
     padding: 30px 0;
     background-color: #FFFFFF;
     border-radius: 30px;
@@ -67,8 +67,11 @@ main{
 .inputs-contact{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    height: 150px;
+}
+.inputs-contact:last-child{
+    height: 500px;
 }
 
 .inputs-contact input,
@@ -318,7 +321,7 @@ main{
     #contact-container form{
         flex-direction: row;
         flex-wrap: wrap;
-        height: 60vh;
+        height: 500px;
     }
     .inputs-contact label{
         padding: 10px 0;

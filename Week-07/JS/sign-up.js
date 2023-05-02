@@ -13,6 +13,10 @@ var repeatPassword = document.querySelector("#repeat-password");
 var buttonSignUp = document.querySelector("#sign-up-button");
 var emailRegex = /^[^@]+@[^@]+.[a-zA-Z]{2,}$/;
 
+var modalContainer = document.getElementById("myModal");
+var span = document.getElementsByClassName("close")[0];
+var modalText = document.querySelector('#modal-text');
+
 //localStorage get items
 var savedData = localStorage.getItem('formData');
 if (savedData !== null) {
@@ -30,7 +34,7 @@ if (savedData !== null) {
   repeatPassword.value= data.password;
 }
 //fucntions validation
-
+//The numbers returned by each validation are for entering the specific error message
 function validateName() {
   if (name1.value === "") {
     return 1;
@@ -437,8 +441,8 @@ function fetchSignUp(){
     if(data.success===false){
       throw data.errors[0].msg;
     }else{
-      alert('successful request');
-      alert(data.msg);
+      modalText.innerHTML = 'Success request: '+ data.msg
+      modalContainer.style.display = "block";
     }
   })
   .then(function(){
@@ -459,25 +463,34 @@ function fetchSignUp(){
     localStorage.setItem('formData', JSON.stringify(data));
   })
   .catch(function(errors){
-    alert('Error request');
-    alert(errors) ; 
+    modalText.innerHTML = 'Error request: '+ errors
+    modalContainer.style.display = "block";
   })
 }
 
-
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modalContainer.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalContainer) {
+    modalContainer.style.display = "none";
+  }
+}
 
 function buttonSignUpClick() {
   if (
-    validateName() &&
-    validateLastName() &&
-    validateDni() &&
-    validateBirthdate &&
-    validatePhoneNumber() &&
-    validateAdress() &&
-    validateCity() &&
-    validateZipCode() &&
-    validateEmail() &&
-    validatePassword() &&
+    validateName() === true &&
+    validateLastName() === true &&
+    validateDni() === true &&
+    validateBirthdate() &&
+    validatePhoneNumber() === true &&
+    validateAdress() === true &&
+    validateCity() === true &&
+    validateZipCode() === true &&
+    validateEmail() === true &&
+    validatePassword() === true &&
     validatePasswordRepeat() === true
   ) {
     fetchSignUp();
