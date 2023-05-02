@@ -10,7 +10,6 @@ var zipCode = document.querySelector("#zip-code");
 var email = document.querySelector("#email");
 var password = document.querySelector("#password");
 var repeatPassword = document.querySelector("#repeat-password");
-
 var buttonSignUp = document.querySelector("#sign-up-button");
 var emailRegex = /^[^@]+@[^@]+.[a-zA-Z]{2,}$/;
 
@@ -59,9 +58,6 @@ function validateBirthdate() {
   var day = parseInt(splitDate[2], 10);
   var birthdateValue= new Date(year, month - 1, day);
   var currentDate = new Date();
-  console.log(birthdateValue)
-  console.log(currentDate)
-  
   if (birthdate.value === "") {
     return 1;
   }else if (birthdateValue > currentDate) {
@@ -409,6 +405,32 @@ function focusFunction(evt) {
   }
 }
 
+function fetchSignUp(){
+  //change the birthdate to mm/dd/yyyy before to the request
+  var birthdateValue = new Date(birthdate.value);
+  var day = (birthdateValue.getDate() + 1).toString().padStart(2, '0');
+  var month = (birthdateValue.getMonth() + 1).toString().padStart(2, '0');
+  var year = birthdateValue.getFullYear();
+  birthdateValue = `${month}/${day}/${year}`;
+//request
+  fetch(`https://api-rest-server.vercel.app/signup?name=${name1.value}&lastName=${lastName.value}&dni=${dni.value}&dob=${birthdateValue}&phone=${phoneNumber.value}&address=${adress.value}&city=${city.value}&zip=${zipCode.value}&email=${email.value}&password=${password.value}`)
+  .then(function(response){
+    return response.json();
+  })
+  .then(function(data){
+    if(data.success===false){
+      throw data.errors[0].msg;
+    }else{
+      alert(data.msg)
+    }
+  })
+  .catch(function(errors){
+    alert(errors)  
+  })
+}
+
+
+
 function buttonSignUpClick() {
   if (
     validateName() &&
@@ -423,28 +445,30 @@ function buttonSignUpClick() {
     validatePassword() &&
     validatePasswordRepeat() === true
   ) {
-    alert(
-        "Name: " +
-        name1.value +
-        "\nLastName: " +
-        lastName.value +
-        "\nDNI: " +
-        dni.value +
-        "\nBirthdate: " +
-        birthdate.value +
-        "\nPhone number: " +
-        phoneNumber.value +
-        "\nAdress: " +
-        adress.value +
-        "\nCity: " +
-        city.value +
-        "\nZip code: " +
-        zipCode.value +
-        "\nEmail: " +
-        email.value +
-        "\nPassword: " +
-        password.value
-    );
+    fetchSignUp();
+    
+    // alert(
+    //     "Name: " +
+    //     name1.value +
+    //     "\nLastName: " +
+    //     lastName.value +
+    //     "\nDNI: " +
+    //     dni.value +
+    //     "\nBirthdate: " +
+    //     birthdate.value +
+    //     "\nPhone number: " +
+    //     phoneNumber.value +
+    //     "\nAdress: " +
+    //     adress.value +
+    //     "\nCity: " +
+    //     city.value +
+    //     "\nZip code: " +
+    //     zipCode.value +
+    //     "\nEmail: " +
+    //     email.value +
+    //     "\nPassword: " +
+    //     password.value
+    // );
   } else {
     alert("Fill in all the fields correctly");
   }
