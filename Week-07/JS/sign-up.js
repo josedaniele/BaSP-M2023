@@ -14,8 +14,9 @@ var buttonSignUp = document.querySelector("#sign-up-button");
 var emailRegex = /^[^@]+@[^@]+.[a-zA-Z]{2,}$/;
 
 var modalContainer = document.getElementById("myModal");
+var modalText = document.getElementById("modal-text");
 var span = document.getElementsByClassName("close")[0];
-var modalText = document.querySelector('#modal-text');
+
 
 //localStorage get items
 var savedData = localStorage.getItem('formData');
@@ -439,9 +440,10 @@ function fetchSignUp(){
   })
   .then(function(data){
     if(data.success===false){
-      throw data.errors[0].msg;
+      throw data.errors;
     }else{
-      modalText.innerHTML = 'Success request: '+ data.msg
+      modalText.insertAdjacentHTML(
+        "beforeend", `<p class = "close-item">Success request: ${data.msg}</p>`)
       modalContainer.style.display = "block";
     }
   })
@@ -463,19 +465,41 @@ function fetchSignUp(){
     localStorage.setItem('formData', JSON.stringify(data));
   })
   .catch(function(errors){
-    modalText.innerHTML = 'Error request: '+ errors
+    modalText.insertAdjacentHTML(
+        "beforeend", `<p class ="close-item">Error request:</p>`)
+    for (var i = 0; i < errors.length; i++) {
+      modalText.insertAdjacentHTML(
+        "beforeend", `<p class ="close-item">${errors[i].msg}</p>`)
+    }
     modalContainer.style.display = "block";
   })
 }
 
-// When the user clicks on <span> (x), close the modal
+/* 
+When the user clicks on <span> (x), close the modal and 
+remove error messages from the modal to avoid repetition
+*/
 span.onclick = function() {
   modalContainer.style.display = "none";
+  if (document.querySelector(".close-item")) {
+    var elementos = document.querySelectorAll('.close-item');
+    for (let i = 0; i < elementos.length; i++) {
+      elementos[i].remove();
+    }
+  }
 }
-// When the user clicks anywhere outside of the modal, close it
+/* When the user clicks anywhere outside of the modal, close it and
+ remove error messages from the modal to avoid repetition
+*/
 window.onclick = function(event) {
   if (event.target == modalContainer) {
     modalContainer.style.display = "none";
+    if (document.querySelector(".close-item")) {
+      var elementos = document.querySelectorAll('.close-item');
+      for (let i = 0; i < elementos.length; i++) {
+        elementos[i].remove();
+      }
+    }
   }
 }
 

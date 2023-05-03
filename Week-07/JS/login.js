@@ -58,7 +58,7 @@ function fetchLogin(){
     })
     .then(function(data){
       if(data.success===false){
-        throw data.errors[0].msg;
+        throw data.errors.msg;
       }else{
         modalText.innerHTML = 'Success request: '+ data.msg
         modalContainer.style.display = "block";
